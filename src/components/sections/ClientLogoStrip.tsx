@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const clientLogos = [
-  { name: "Moen" },
-  { name: "Gimme Seaweed" },
-  { name: "Lens.com" },
-  { name: "Wahoo Fitness" },
-  { name: "The Knot" },
-  { name: "JD Power" },
+  { name: "Moen", src: "/logos/clients/moen.png" },
+  { name: "Gimme Seaweed", src: "/logos/clients/gimme-seaweed.png" },
+  { name: "Lens.com", src: "/logos/clients/lens-com.png" },
+  { name: "Wahoo Fitness", src: "/logos/clients/wahoo-fitness.png" },
+  { name: "The Knot", src: "/logos/clients/the-knot.png" },
+  { name: "JD Power", src: "/logos/clients/jd-power.png" },
 ];
 
 const ClientLogoStrip = () => {
@@ -30,11 +30,13 @@ const ClientLogoStrip = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.07, duration: 0.4 }}
-              className="flex items-center justify-center h-10 opacity-40 hover:opacity-100 transition-opacity duration-300"
+              className="flex items-center justify-center h-10 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
             >
-              <span className="text-foreground text-lg font-semibold tracking-tight whitespace-nowrap">
-                {logo.name}
-              </span>
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-8 md:h-10 w-auto object-contain"
+              />
             </motion.div>
           ))}
         </div>
