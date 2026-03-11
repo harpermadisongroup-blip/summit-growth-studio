@@ -33,8 +33,6 @@ const Index = () => {
         <DashboardMockup />
       </HeroSection>
 
-      {/* Client Logos */}
-      <ClientLogoStrip />
 
       {/* Platform Logos */}
       <PlatformLogoStrip />
