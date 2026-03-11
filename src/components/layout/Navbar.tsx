@@ -64,7 +64,7 @@ const Navbar = () => {
                   transition={{ duration: 0.15 }}
                   className="absolute top-full left-0 pt-2"
                 >
-                  <div className="glass-card rounded-xl p-2 min-w-[280px]">
+                  <div className="bg-background border border-border rounded-xl p-2 min-w-[280px] shadow-lg">
                     {solutions.map((item) => (
                       <Link
                         key={item.href}
