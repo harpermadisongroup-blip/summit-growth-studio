@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import FloatingElements from "@/components/ui/FloatingElements";
 import SkaiPartnerBadge from "@/components/sections/SkaiPartnerBadge";
+import ClientLogoStrip from "@/components/sections/ClientLogoStrip";
 
 interface HeroSectionProps {
   headline: React.ReactNode;
