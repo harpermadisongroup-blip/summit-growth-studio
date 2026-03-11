@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
 import PlatformLogoStrip from "@/components/sections/PlatformLogoStrip";
+import ClientLogoStrip from "@/components/sections/ClientLogoStrip";
 import PlatformLogoGrid from "@/components/ui/PlatformLogoGrid";
 import DashboardMockup from "@/components/ui/DashboardMockup";
 import IconBadge from "@/components/ui/IconBadge";
@@ -34,6 +35,9 @@ const Index = () => {
 
       {/* Platform Logos */}
       <PlatformLogoStrip />
+
+      {/* Client Logos */}
+      <ClientLogoStrip />
 
       {/* The Real Problem — Dark Section */}
       <section className="relative py-24 md:py-32 section-dark overflow-hidden">
