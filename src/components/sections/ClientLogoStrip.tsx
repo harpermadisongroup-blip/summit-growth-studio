@@ -30,12 +30,12 @@ const ClientLogoStrip = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.07, duration: 0.4 }}
-              className="flex items-center justify-center h-10 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+              className="flex items-center justify-center h-16 md:h-20 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
             >
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="h-8 md:h-10 w-auto object-contain"
+                className="h-12 md:h-16 w-auto object-contain"
               />
             </motion.div>
           ))}
