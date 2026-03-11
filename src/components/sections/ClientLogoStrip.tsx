@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const clientLogos = [
-  { name: "Client 1", placeholder: true },
-  { name: "Client 2", placeholder: true },
-  { name: "Client 3", placeholder: true },
-  { name: "Client 4", placeholder: true },
-  { name: "Client 5", placeholder: true },
-  { name: "Client 6", placeholder: true },
+  { name: "Moen", src: "/logos/clients/moen.png" },
+  { name: "Gimme Seaweed", src: "/logos/clients/gimme-seaweed.png" },
+  { name: "Lens.com", src: "/logos/clients/lens-com.png" },
+  { name: "Wahoo Fitness", src: "/logos/clients/wahoo-fitness.png" },
+  { name: "The Knot", src: "/logos/clients/the-knot.png" },
+  { name: "JD Power", src: "/logos/clients/jd-power.png" },
 ];
 
 const ClientLogoStrip = () => {
@@ -32,10 +32,11 @@ const ClientLogoStrip = () => {
               transition={{ delay: i * 0.07, duration: 0.4 }}
               className="flex items-center justify-center h-10 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
             >
-              {/* Replace these placeholders with actual <img> tags */}
-              <div className="h-8 w-24 rounded bg-muted flex items-center justify-center text-muted-foreground text-xs font-medium">
-                {logo.name}
-              </div>
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-8 md:h-10 w-auto object-contain"
+              />
             </motion.div>
           ))}
         </div>
