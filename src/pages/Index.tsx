@@ -36,6 +36,9 @@ const Index = () => {
       {/* Platform Logos */}
       <PlatformLogoStrip />
 
+      {/* Client Logos */}
+      <ClientLogoStrip />
+
       {/* The Real Problem — Dark Section */}
       <section className="relative py-24 md:py-32 section-dark overflow-hidden">
         <FloatingElements variant="section" />
