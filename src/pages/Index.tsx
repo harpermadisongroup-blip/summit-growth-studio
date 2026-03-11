@@ -33,11 +33,11 @@ const Index = () => {
         <DashboardMockup />
       </HeroSection>
 
-      {/* Platform Logos */}
-      <PlatformLogoStrip />
-
       {/* Client Logos */}
       <ClientLogoStrip />
+
+      {/* Platform Logos */}
+      <PlatformLogoStrip />
 
       {/* The Real Problem — Dark Section */}
       <section className="relative py-24 md:py-32 section-dark overflow-hidden">
