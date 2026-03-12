@@ -124,7 +124,7 @@ const Navbar = () => {
             About
           </Link>
           <Link to="/insights" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
-            Insights
+            Blog
           </Link>
         </div>
 
