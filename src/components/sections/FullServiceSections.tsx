@@ -131,7 +131,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-h2 text-white mb-4"
+            className="text-h2 text-secondary-foreground mb-4"
           >
             One partner, many configurations
           </motion.h2>
@@ -140,7 +140,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-white/60 mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/60 mb-12"
           >
             Full-service today doesn't mean full-service forever. Move between engagement models as your team, budget, and strategy evolve—without switching platforms or partners.
           </motion.p>
@@ -156,7 +156,7 @@ const FullServiceSections = () => {
                 className={`flex items-center gap-4 p-5 rounded-xl border transition-all duration-300 ${
                   point.transition
                     ? "border-primary/30 bg-primary/5"
-                    : "border-white/10 bg-white/5 hover:border-white/20"
+                    : "border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-secondary-foreground/20"
                 }`}
               >
                 {point.transition ? (
@@ -164,7 +164,7 @@ const FullServiceSections = () => {
                 ) : (
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                 )}
-                <p className={`text-body-sm ${point.transition ? "text-primary font-medium" : "text-white/80"}`}>
+                <p className={`text-body-sm ${point.transition ? "text-primary font-medium" : "text-secondary-foreground/80"}`}>
                   {point.text}
                 </p>
                 {point.transition && (

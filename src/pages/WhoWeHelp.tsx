@@ -268,16 +268,16 @@ const WhoWeHelpHub = () => {
               >
                 <Link
                   to={item.href}
-                  className="block p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/30 hover:bg-white/[0.08] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group h-full flex flex-col"
+                  className="block p-8 rounded-2xl border border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-primary/30 hover:bg-secondary-foreground/[0.08] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group h-full flex flex-col"
                 >
                   <IconBadge icon={item.icon} size="lg" variant="primary" className="mb-4" />
-                  <h3 className="text-h3 text-white group-hover:text-primary transition-colors mb-3">{item.title}</h3>
-                  <p className="text-body text-white/60 mb-5">{item.desc}</p>
+                  <h3 className="text-h3 text-secondary-foreground group-hover:text-primary transition-colors mb-3">{item.title}</h3>
+                  <p className="text-body text-secondary-foreground/60 mb-5">{item.desc}</p>
                   <ul className="space-y-3 mb-6 flex-1">
                     {item.bullets.map((bullet) => (
                       <li key={bullet} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                        <span className="text-body-sm text-white/70">{bullet}</span>
+                        <span className="text-body-sm text-secondary-foreground/70">{bullet}</span>
                       </li>
                     ))}
                   </ul>
@@ -403,15 +403,15 @@ const WhoWeHelpHub = () => {
                 >
                   <Link
                     to={scenario.link}
-                    className="block p-6 rounded-xl border border-white/10 bg-white/5 hover:border-primary/30 hover:bg-white/[0.08] transition-all duration-300 group h-full"
+                    className="block p-6 rounded-xl border border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-primary/30 hover:bg-secondary-foreground/[0.08] transition-all duration-300 group h-full"
                   >
                     <div className="flex items-start gap-3 mb-4">
                       <div className="w-9 h-9 rounded-lg bg-destructive/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                         <Icon className="w-4.5 h-4.5 text-destructive group-hover:text-primary transition-colors" />
                       </div>
-                      <p className="text-sm font-semibold text-white leading-snug">"{scenario.trigger}"</p>
+                      <p className="text-sm font-semibold text-secondary-foreground leading-snug">"{scenario.trigger}"</p>
                     </div>
-                    <p className="text-body-sm text-white/60 mb-4">{scenario.solution}</p>
+                    <p className="text-body-sm text-secondary-foreground/60 mb-4">{scenario.solution}</p>
                     <span className="inline-flex items-center gap-1 text-xs text-accent font-medium group-hover:gap-2 transition-all">
                       See how we solve this <ArrowRight className="w-3 h-3" />
                     </span>
