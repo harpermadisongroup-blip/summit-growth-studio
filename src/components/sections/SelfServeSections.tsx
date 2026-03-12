@@ -129,7 +129,7 @@ const SelfServeSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-h2 text-white mb-4"
+            className="text-h2 text-secondary-foreground mb-4"
           >
             Support that scales with you
           </motion.h2>
@@ -138,7 +138,7 @@ const SelfServeSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-white/60 mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/60 mb-12"
           >
             Start with what you need. Add more as you grow. Every tier is included in the self-serve model—with a clear path to full-service when you're ready.
           </motion.p>
@@ -154,7 +154,7 @@ const SelfServeSections = () => {
                 className={`flex items-start gap-4 p-5 rounded-xl border transition-all duration-300 ${
                   tier.upgrade
                     ? "border-primary/30 bg-primary/5"
-                    : "border-white/10 bg-white/5 hover:border-white/20"
+                    : "border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-secondary-foreground/20"
                 }`}
               >
                 <div className="mt-0.5">
@@ -165,10 +165,10 @@ const SelfServeSections = () => {
                   )}
                 </div>
                 <div>
-                  <h3 className={`font-semibold ${tier.upgrade ? "text-primary" : "text-white"}`}>
+                  <h3 className={`font-semibold ${tier.upgrade ? "text-primary" : "text-secondary-foreground"}`}>
                     {tier.level}
                   </h3>
-                  <p className="text-body-sm text-white/60 mt-1">{tier.desc}</p>
+                  <p className="text-body-sm text-secondary-foreground/60 mt-1">{tier.desc}</p>
                 </div>
                 {tier.included && (
                   <span className="ml-auto text-xs font-medium uppercase tracking-wide text-primary/80 bg-primary/10 px-3 py-1 rounded-full whitespace-nowrap">
