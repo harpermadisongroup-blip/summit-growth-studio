@@ -195,7 +195,7 @@ const Pricing = () => {
 
                 <Link to={plan.name === "Enterprise" ? "/contact" : "/strategy-call"}>
                   <Button
-                    className={`w-full ${
+                    className={`w-full h-14 text-base font-semibold ${
                       plan.highlight
                         ? "bg-accent text-accent-foreground hover:bg-accent/90"
                         : "bg-primary !text-primary-foreground hover:bg-primary/90"
@@ -203,7 +203,7 @@ const Pricing = () => {
                     size="lg"
                   >
                     {plan.cta}
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </motion.div>
@@ -350,9 +350,9 @@ const Pricing = () => {
                 </p>
 
                 <Link to="/strategy-call">
-                  <Button className="w-full bg-primary !text-primary-foreground hover:bg-primary/90 btn-glow" size="lg">
+                  <Button className="w-full h-14 text-base font-semibold bg-primary !text-primary-foreground hover:bg-primary/90 btn-glow" size="lg">
                     Get Your Custom Quote
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               </div>

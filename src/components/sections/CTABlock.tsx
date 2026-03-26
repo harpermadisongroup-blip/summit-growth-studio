@@ -36,9 +36,9 @@ const CTABlock = ({
               {subheadline}
             </p>
             <Link to={ctaHref} className="inline-block mt-8">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 btn-glow gap-2 px-8 h-12">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 btn-glow gap-2 text-base px-10 h-14 font-semibold">
                 {ctaLabel}
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
           </div>
