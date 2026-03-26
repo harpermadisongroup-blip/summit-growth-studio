@@ -122,7 +122,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-body-sm font-medium tracking-wide uppercase text-primary mb-4"
+            className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
           >
             Flexible Engagement
           </motion.p>
@@ -140,7 +140,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-secondary-foreground/60 mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/70 mb-12"
           >
             Full-service today doesn't mean full-service forever. Move between engagement models as your team, budget, and strategy evolve—without switching platforms or partners.
           </motion.p>
@@ -155,22 +155,22 @@ const FullServiceSections = () => {
                 transition={{ delay: i * 0.08, duration: 0.5 }}
                 className={`flex items-center gap-4 p-5 rounded-xl border transition-all duration-300 ${
                   point.transition
-                    ? "border-primary/30 bg-primary/5"
-                    : "border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-secondary-foreground/20"
+                    ? "border-accent/30 bg-accent/10"
+                    : "border-secondary-foreground/15 bg-secondary-foreground/[0.07] hover:border-secondary-foreground/25"
                 }`}
               >
                 {point.transition ? (
-                  <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
+                  <ArrowRight className="w-5 h-5 text-accent flex-shrink-0" />
                 ) : (
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
                 )}
-                <p className={`text-body-sm ${point.transition ? "text-primary font-medium" : "text-secondary-foreground/80"}`}>
+                <p className={`text-body-sm ${point.transition ? "text-accent font-medium" : "text-secondary-foreground/90"}`}>
                   {point.text}
                 </p>
                 {point.transition && (
                   <Link
                     to="/solutions/self-serve"
-                    className="ml-auto text-xs font-medium text-primary hover:underline whitespace-nowrap"
+                    className="ml-auto text-xs font-medium text-accent hover:underline whitespace-nowrap"
                   >
                     Learn more →
                   </Link>

@@ -120,7 +120,7 @@ const SelfServeSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-body-sm font-medium tracking-wide uppercase text-primary mb-4"
+            className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
           >
             Flexible Support
           </motion.p>
@@ -138,7 +138,7 @@ const SelfServeSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-secondary-foreground/60 mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/70 mb-12"
           >
             Start with what you need. Add more as you grow. Every tier is included in the self-serve model—with a clear path to full-service when you're ready.
           </motion.p>
@@ -153,32 +153,32 @@ const SelfServeSections = () => {
                 transition={{ delay: i * 0.08, duration: 0.5 }}
                 className={`flex items-start gap-4 p-5 rounded-xl border transition-all duration-300 ${
                   tier.upgrade
-                    ? "border-primary/30 bg-primary/5"
-                    : "border-secondary-foreground/10 bg-secondary-foreground/5 hover:border-secondary-foreground/20"
+                    ? "border-accent/30 bg-accent/10"
+                    : "border-secondary-foreground/15 bg-secondary-foreground/[0.07] hover:border-secondary-foreground/25"
                 }`}
               >
                 <div className="mt-0.5">
                   {tier.upgrade ? (
-                    <ArrowRight className="w-5 h-5 text-primary" />
+                    <ArrowRight className="w-5 h-5 text-accent" />
                   ) : (
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <CheckCircle2 className="w-5 h-5 text-accent" />
                   )}
                 </div>
                 <div>
-                  <h3 className={`font-semibold ${tier.upgrade ? "text-primary" : "text-secondary-foreground"}`}>
+                  <h3 className={`font-semibold ${tier.upgrade ? "text-accent" : "text-secondary-foreground"}`}>
                     {tier.level}
                   </h3>
-                  <p className="text-body-sm text-secondary-foreground/60 mt-1">{tier.desc}</p>
+                  <p className="text-body-sm text-secondary-foreground/70 mt-1">{tier.desc}</p>
                 </div>
                 {tier.included && (
-                  <span className="ml-auto text-xs font-medium uppercase tracking-wide text-primary/80 bg-primary/10 px-3 py-1 rounded-full whitespace-nowrap">
+                  <span className="ml-auto text-xs font-medium uppercase tracking-wide text-accent bg-accent/15 px-3 py-1 rounded-full whitespace-nowrap">
                     Included
                   </span>
                 )}
                 {tier.upgrade && (
                   <Link
                     to="/solutions/full-service"
-                    className="ml-auto text-xs font-medium text-primary hover:underline whitespace-nowrap"
+                    className="ml-auto text-xs font-medium text-accent hover:underline whitespace-nowrap"
                   >
                     Learn more →
                   </Link>

@@ -46,11 +46,11 @@ const FeatureGrid = ({ features, columns = 3, variant = "light" }: FeatureGridPr
             <h3 className={`text-lg font-semibold ${variant === "dark" ? "text-secondary-foreground" : "text-foreground"}`}>
               {feature.title}
             </h3>
-            <p className={`mt-2 text-body-sm ${variant === "dark" ? "text-secondary-foreground/60" : "text-muted-foreground"}`}>
+            <p className={`mt-2 text-body-sm ${variant === "dark" ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>
               {feature.description}
             </p>
             {isSkai && (
-              <span className={`inline-flex items-center gap-1 mt-3 text-xs font-medium ${variant === "dark" ? "text-primary" : "text-primary"} group-hover:underline`}>
+              <span className={`inline-flex items-center gap-1 mt-3 text-xs font-medium ${variant === "dark" ? "text-accent" : "text-primary"} group-hover:underline`}>
                 Learn more about Skai →
               </span>
             )}
