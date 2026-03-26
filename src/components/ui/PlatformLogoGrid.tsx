@@ -115,7 +115,11 @@ const PlatformLogoGrid = () => {
                   alt={`${platform.name} logo`}
                   className="h-12 w-auto max-w-[140px] object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                 />
-              ) : null}
+              ) : (
+                <span className="text-sm font-semibold text-muted-foreground/60 group-hover:text-foreground transition-colors duration-300">
+                  {platform.name}
+                </span>
+              )}
               <span className="text-[10px] text-muted-foreground/40 group-hover:text-muted-foreground/70 transition-colors duration-300 leading-tight">
                 {platform.subtitle}
               </span>
