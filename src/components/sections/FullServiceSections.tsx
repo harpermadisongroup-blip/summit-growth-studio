@@ -140,7 +140,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-secondary-foreground/60 mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/70 mb-12"
           >
             Full-service today doesn't mean full-service forever. Move between engagement models as your team, budget, and strategy evolve—without switching platforms or partners.
           </motion.p>
