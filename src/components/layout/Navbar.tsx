@@ -69,7 +69,7 @@ const Navbar = () => {
                       <Link
                         key={item.href}
                         to={item.href}
-                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
+                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-colors font-medium"
                       >
                         {item.label}
                       </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
                       <Link
                         key={item.href}
                         to={item.href}
-                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
+                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-colors font-medium"
                       >
                         {item.label}
                       </Link>
