@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import PublisherMultiSelect from "@/components/ui/PublisherMultiSelect";
 import { Check, Shield, Users, Zap } from "lucide-react";
 
 const fadeInUp = {
@@ -112,6 +113,7 @@ const StrategyCall = () => {
                   <Label htmlFor="spend">Monthly ad spend <span className="text-destructive">*</span></Label>
                   <Input id="spend" placeholder="e.g., $100K/month" required />
                 </div>
+                <PublisherMultiSelect />
                 <div className="space-y-2">
                   <Label htmlFor="message">What are your biggest challenges?</Label>
                   <Textarea id="message" rows={4} placeholder="Tell us about your goals and current setup..." />
