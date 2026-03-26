@@ -59,8 +59,20 @@ const platforms: Platform[] = [
     logo: "/logos/target.svg",
   },
   {
+    name: "Instacart",
+    subtitle: "Retail Media",
+    brandColor: "145 70% 42%",
+    logo: null,
+  },
+  {
+    name: "Criteo",
+    subtitle: "Commerce Media",
+    brandColor: "16 100% 50%",
+    logo: null,
+  },
+  {
     name: "More Networks",
-    subtitle: "Instacart, Kroger & more",
+    subtitle: "Kroger & more",
     brandColor: "var(--accent)",
     logo: null,
     isMulti: true,

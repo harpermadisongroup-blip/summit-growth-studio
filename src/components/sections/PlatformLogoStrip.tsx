@@ -4,7 +4,10 @@ const logos = [
   { name: "Amazon", icon: "amazon" },
   { name: "Walmart", icon: "walmart" },
   { name: "Google", icon: "google" },
+  { name: "YouTube", icon: "youtube" },
   { name: "Meta", icon: "meta" },
+  { name: "Instacart", icon: "instacart" },
+  { name: "Criteo", icon: "criteo" },
   { name: "Skai", icon: "skai" },
 ];
 
