@@ -253,6 +253,64 @@ const SolutionDetail = () => {
         </div>
       </section>
 
+      {/* DSP Section */}
+      {data.dspSection && (
+        <section className="relative py-24 md:py-32 overflow-hidden bg-surface-elevated">
+          <FloatingElements variant="section" />
+          <div className="mx-auto max-w-site px-6 relative">
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
+            >
+              {data.dspSection.label}
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+              className="text-h2 text-foreground mb-4"
+            >
+              {data.dspSection.title}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="max-w-3xl text-body-lg text-muted-foreground mb-14"
+            >
+              {data.dspSection.description}
+            </motion.p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {data.dspSection.capabilities.map((cap, i) => {
+                const Icon = cap.icon;
+                return (
+                  <motion.div
+                    key={cap.title}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="group p-6 rounded-xl glass-card border border-border/50 hover:border-accent/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                      <Icon className="w-5 h-5 text-accent" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">{cap.title}</h3>
+                    <p className="mt-2 text-body-sm text-muted-foreground">{cap.description}</p>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       {data.showFullServiceSections && <FullServiceSections />}
       {data.showSelfServeSections && <SelfServeSections />}
 
