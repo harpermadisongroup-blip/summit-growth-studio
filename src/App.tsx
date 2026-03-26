@@ -16,6 +16,7 @@ import StrategyCall from "./pages/StrategyCall";
 import Contact from "./pages/Contact";
 import Insights from "./pages/Insights";
 import Privacy from "./pages/Privacy";
+import Pricing from "./pages/Pricing";
 import Terms from "./pages/Terms";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/terms" element={<Terms />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
