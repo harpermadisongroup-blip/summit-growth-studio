@@ -55,25 +55,25 @@ const Contact = () => {
               <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First name</Label>
-                    <Input id="firstName" placeholder="Jane" />
+                    <Label htmlFor="firstName">First name <span className="text-destructive">*</span></Label>
+                    <Input id="firstName" placeholder="Jane" required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last name</Label>
-                    <Input id="lastName" placeholder="Smith" />
+                    <Label htmlFor="lastName">Last name <span className="text-destructive">*</span></Label>
+                    <Input id="lastName" placeholder="Smith" required />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Work email</Label>
-                  <Input id="email" type="email" placeholder="jane@company.com" />
+                  <Label htmlFor="email">Work email <span className="text-destructive">*</span></Label>
+                  <Input id="email" type="email" placeholder="jane@company.com" required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="company">Company</Label>
-                  <Input id="company" placeholder="Company name" />
+                  <Label htmlFor="company">Company name <span className="text-destructive">*</span></Label>
+                  <Input id="company" placeholder="Company name" required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="spend">Monthly ad spend</Label>
-                  <Input id="spend" placeholder="e.g., $100K/month" />
+                  <Label htmlFor="spend">Monthly ad spend <span className="text-destructive">*</span></Label>
+                  <Input id="spend" placeholder="e.g., $100K/month" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">What are your biggest challenges?</Label>
