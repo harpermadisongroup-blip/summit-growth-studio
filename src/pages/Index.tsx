@@ -3,7 +3,7 @@ import CTABlock from "@/components/sections/CTABlock";
 import PlatformLogoStrip from "@/components/sections/PlatformLogoStrip";
 
 import PlatformLogoGrid from "@/components/ui/PlatformLogoGrid";
-
+import DashboardMockup from "@/components/ui/DashboardMockup";
 import IconBadge from "@/components/ui/IconBadge";
 import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
@@ -28,7 +28,9 @@ const Index = () => {
         subheadline="Powered by Skai's AI-driven commerce media platform—the same technology behind the world's largest advertisers. Combined with hands-on media management across Amazon, Walmart, Google, Meta, and other RMNs."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
         secondaryCta={{ label: "See if you qualify", href: "/contact" }}
+        showSkaiPartner
       >
+        <DashboardMockup />
       </HeroSection>
 
 

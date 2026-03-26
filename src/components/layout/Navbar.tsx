@@ -52,7 +52,7 @@ const Navbar = () => {
             onMouseEnter={() => setOpenDropdown("solutions")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
               Solutions <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", openDropdown === "solutions" && "rotate-180")} />
             </button>
             <AnimatePresence>
@@ -69,7 +69,7 @@ const Navbar = () => {
                       <Link
                         key={item.href}
                         to={item.href}
-                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-primary-foreground hover:bg-primary rounded-lg transition-all duration-200"
+                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
             onMouseEnter={() => setOpenDropdown("platforms")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
               Media Services <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", openDropdown === "platforms" && "rotate-180")} />
             </button>
             <AnimatePresence>
@@ -103,7 +103,7 @@ const Navbar = () => {
                       <Link
                         key={item.href}
                         to={item.href}
-                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-primary-foreground hover:bg-primary rounded-lg transition-all duration-200"
+                        className="block px-3 py-2.5 text-body-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -114,16 +114,16 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <Link to="/who-we-help" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+          <Link to="/who-we-help" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             Who We Help
           </Link>
-          <Link to="/case-studies" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+          <Link to="/case-studies" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             Case Studies
           </Link>
-          <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+          <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             About
           </Link>
-          <Link to="/insights" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
+          <Link to="/insights" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             Blog
           </Link>
         </div>
