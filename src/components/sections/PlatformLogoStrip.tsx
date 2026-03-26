@@ -43,7 +43,7 @@ const PlatformLogoStrip = () => {
   const doubledLogos = [...logos, ...logos];
 
   return (
-    <section className="py-12 border-y border-border/50 overflow-hidden bg-surface-elevated">
+    <section className="py-14 md:py-18 border-y border-border/50 overflow-hidden bg-surface-elevated">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
