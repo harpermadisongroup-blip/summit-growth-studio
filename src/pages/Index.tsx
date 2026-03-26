@@ -30,7 +30,7 @@ const Index = () => {
         secondaryCta={{ label: "See if you qualify", href: "/contact" }}
         showSkaiPartner
       >
-        <DashboardMockup />
+        
       </HeroSection>
 
 
