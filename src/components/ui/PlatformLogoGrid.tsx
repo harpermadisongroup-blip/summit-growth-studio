@@ -59,8 +59,20 @@ const platforms: Platform[] = [
     logo: "/logos/target.svg",
   },
   {
+    name: "Instacart",
+    subtitle: "Retail Media",
+    brandColor: "145 70% 42%",
+    logo: null,
+  },
+  {
+    name: "Criteo",
+    subtitle: "Commerce Media",
+    brandColor: "16 100% 50%",
+    logo: null,
+  },
+  {
     name: "More Networks",
-    subtitle: "Instacart, Kroger & more",
+    subtitle: "Kroger & more",
     brandColor: "var(--accent)",
     logo: null,
     isMulti: true,
@@ -103,7 +115,11 @@ const PlatformLogoGrid = () => {
                   alt={`${platform.name} logo`}
                   className="h-12 w-auto max-w-[140px] object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                 />
-              ) : null}
+              ) : (
+                <span className="text-sm font-semibold text-muted-foreground/60 group-hover:text-foreground transition-colors duration-300">
+                  {platform.name}
+                </span>
+              )}
               <span className="text-[10px] text-muted-foreground/40 group-hover:text-muted-foreground/70 transition-colors duration-300 leading-tight">
                 {platform.subtitle}
               </span>

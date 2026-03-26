@@ -4,7 +4,10 @@ const logos = [
   { name: "Amazon", icon: "amazon" },
   { name: "Walmart", icon: "walmart" },
   { name: "Google", icon: "google" },
+  { name: "YouTube", icon: "youtube" },
   { name: "Meta", icon: "meta" },
+  { name: "Instacart", icon: "instacart" },
+  { name: "Criteo", icon: "criteo" },
   { name: "Skai", icon: "skai" },
 ];
 
@@ -28,6 +31,21 @@ const LogoIcon = ({ icon }: { icon: string }) => {
     meta: (
       <svg viewBox="0 0 72 36" className="h-6 w-auto" fill="currentColor">
         <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">meta</text>
+      </svg>
+    ),
+    youtube: (
+      <svg viewBox="0 0 120 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">youtube</text>
+      </svg>
+    ),
+    instacart: (
+      <svg viewBox="0 0 130 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">instacart</text>
+      </svg>
+    ),
+    criteo: (
+      <svg viewBox="0 0 90 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">criteo</text>
       </svg>
     ),
     skai: (

@@ -76,9 +76,12 @@ const channelOptions = [
   { label: "Amazon Ads", value: "amazon" },
   { label: "Walmart Connect", value: "walmart" },
   { label: "Google Ads", value: "google" },
+  { label: "YouTube Ads", value: "youtube" },
   { label: "Microsoft Ads", value: "microsoft" },
   { label: "Meta (Facebook/Instagram)", value: "meta" },
   { label: "TikTok Ads", value: "tiktok" },
+  { label: "Instacart Ads", value: "instacart" },
+  { label: "Criteo", value: "criteo" },
 ];
 
 const spendRanges = [
