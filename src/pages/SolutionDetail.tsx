@@ -25,6 +25,12 @@ const solutionData: Record<string, {
   showNetworksGrid?: boolean;
   showSelfServeSections?: boolean;
   showFullServiceSections?: boolean;
+  dspSection?: {
+    label: string;
+    title: string;
+    description: string;
+    capabilities: { icon: any; title: string; description: string }[];
+  };
 }> = {
   "full-service": {
     title: "Full-Service Performance Management",
@@ -67,9 +73,22 @@ const solutionData: Record<string, {
   },
   "retail-media": {
     title: "Retail Media Management",
-    subtitle: "Manage Amazon Ads, Amazon DSP, Walmart Connect, Walmart DSP, Target Roundel, and other RMNs—all from one unified platform built for real growth.",
+    subtitle: "Manage Amazon Ads, Amazon DSP, Walmart Connect, Walmart DSP, Walmart Onsite Display, Target Roundel, and other RMNs—all from one unified platform built for real growth.",
     showNetworkStrip: true,
     showNetworksGrid: true,
+    dspSection: {
+      label: "DSP & Programmatic Display",
+      title: "Full-funnel DSP across every major retailer",
+      description: "Demand-side platform advertising is the key to reaching shoppers beyond the search results page. We manage DSP campaigns across Amazon, Walmart, and emerging retail networks—combining onsite display, offsite programmatic, video, and CTV into a unified strategy.",
+      capabilities: [
+        { icon: Monitor, title: "Amazon DSP", description: "Programmatic display and video powered by Amazon's exclusive first-party audience data. Retarget shoppers, build lookalike audiences, and drive full-funnel awareness-to-purchase campaigns on and off Amazon." },
+        { icon: ShoppingCart, title: "Walmart DSP", description: "Leverage Walmart's massive first-party shopper data for programmatic display across Walmart.com and the open web. Target by purchase behavior, category affinity, and in-store signals." },
+        { icon: Layers, title: "Walmart Onsite Display", description: "Premium display placements directly on Walmart.com—homepage, search, browse, and item pages. Drive visibility and consideration at the digital shelf with high-impact creative formats." },
+        { icon: Globe, title: "Cross-Retailer DSP Strategy", description: "Unify your DSP campaigns across Amazon, Walmart, and other retail networks in one platform. Eliminate silos, reduce overlap, and allocate budgets based on real-time performance signals." },
+        { icon: Eye, title: "Audience Management & Retargeting", description: "Build and manage audiences across retailers—purchase-based targeting, lookalike modeling, competitor conquesting, and sequential retargeting to move shoppers through the funnel." },
+        { icon: BarChart3, title: "DSP Measurement & Incrementality", description: "Go beyond impressions and clicks. Measure true incremental sales lift, new-to-brand acquisition, and cross-channel attribution to prove DSP's impact on your bottom line." },
+      ],
+    },
     description: "Retail media is the fastest-growing ad channel—but fragmented tools, multiple logins, and siloed data slow teams down. We centralize your entire retail media ecosystem so you can scale faster, optimize smarter, and turn every ad dollar into measurable revenue across Amazon, Walmart, and emerging networks.",
     features: [
       { icon: Globe, title: "Unified Multi-Retailer Management", description: "No more fragmented workflows or siloed data. Manage Amazon, Walmart, and 100+ retail networks from a single platform with centralized campaigns and reporting." },
@@ -233,6 +252,64 @@ const SolutionDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* DSP Section */}
+      {data.dspSection && (
+        <section className="relative py-24 md:py-32 overflow-hidden bg-surface-elevated">
+          <FloatingElements variant="section" />
+          <div className="mx-auto max-w-site px-6 relative">
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
+            >
+              {data.dspSection.label}
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+              className="text-h2 text-foreground mb-4"
+            >
+              {data.dspSection.title}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="max-w-3xl text-body-lg text-muted-foreground mb-14"
+            >
+              {data.dspSection.description}
+            </motion.p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {data.dspSection.capabilities.map((cap, i) => {
+                const Icon = cap.icon;
+                return (
+                  <motion.div
+                    key={cap.title}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="group p-6 rounded-xl glass-card border border-border/50 hover:border-accent/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                      <Icon className="w-5 h-5 text-accent" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">{cap.title}</h3>
+                    <p className="mt-2 text-body-sm text-muted-foreground">{cap.description}</p>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {data.showFullServiceSections && <FullServiceSections />}
       {data.showSelfServeSections && <SelfServeSections />}
