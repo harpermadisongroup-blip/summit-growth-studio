@@ -62,7 +62,7 @@ const HeroSection = ({
           >
             {primaryCta && (
               <Link to={primaryCta.href}>
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 btn-glow transition-all gap-2 text-body-sm px-8 h-12">
+                <Button size="lg" className="bg-primary !text-primary-foreground hover:bg-primary/90 btn-glow transition-all gap-2 text-[0.875rem] leading-[1.6] px-8 h-12">
                   {primaryCta.label}
                   <ArrowRight className="w-4 h-4" />
                 </Button>
