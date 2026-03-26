@@ -15,6 +15,7 @@ import About from "./pages/About";
 import StrategyCall from "./pages/StrategyCall";
 import Contact from "./pages/Contact";
 import Insights from "./pages/Insights";
+import BlogArticle from "./pages/BlogArticle";
 import Privacy from "./pages/Privacy";
 import Pricing from "./pages/Pricing";
 import Terms from "./pages/Terms";
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/strategy-call" element={<StrategyCall />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:slug" element={<BlogArticle />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/terms" element={<Terms />} />

@@ -84,7 +84,7 @@ const Insights = () => {
               transition={{ duration: 0.6 }}
             >
               <Link
-                to="#"
+                to={`/insights/${featuredArticle.slug}`}
                 className="block rounded-2xl glass-card gradient-border-hover hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group overflow-hidden"
               >
                 <div className="h-1.5 bg-gradient-to-r from-primary to-accent" />
@@ -170,7 +170,7 @@ const Insights = () => {
               className="group"
             >
               <Link
-                to="#"
+                to={`/insights/${a.slug}`}
                 className="block rounded-xl glass-card gradient-border-hover hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full overflow-hidden"
               >
                 <div className="h-1 bg-gradient-to-r from-primary to-accent" />
