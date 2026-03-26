@@ -33,6 +33,21 @@ const LogoIcon = ({ icon }: { icon: string }) => {
         <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">meta</text>
       </svg>
     ),
+    youtube: (
+      <svg viewBox="0 0 120 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">youtube</text>
+      </svg>
+    ),
+    instacart: (
+      <svg viewBox="0 0 130 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">instacart</text>
+      </svg>
+    ),
+    criteo: (
+      <svg viewBox="0 0 90 36" className="h-6 w-auto" fill="currentColor">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">criteo</text>
+      </svg>
+    ),
     skai: (
       <svg viewBox="0 0 60 36" className="h-6 w-auto" fill="currentColor">
         <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">skai</text>
