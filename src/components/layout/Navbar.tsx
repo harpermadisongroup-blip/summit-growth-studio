@@ -185,6 +185,7 @@ const Navbar = () => {
               <Link to="/who-we-help" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground">Who We Help</Link>
               <Link to="/case-studies" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground">Case Studies</Link>
               <Link to="/about" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground">About</Link>
+              <Link to="/pricing" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground">Pricing</Link>
               <Link to="/insights" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground">Blog</Link>
               <div className="pt-4 space-y-2">
                 <Link to="/contact" onClick={() => setMobileOpen(false)}>
