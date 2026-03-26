@@ -97,6 +97,7 @@ const solutionData: Record<string, {
   "dsp-display": {
     title: "DSP & Programmatic Display",
     subtitle: "Full-funnel programmatic advertising across Amazon DSP, Walmart DSP, Walmart Onsite Display, and The Trade Desk—managed for performance at every stage of the shopper journey.",
+    showNetworkStrip: true,
     description: "Demand-side platform advertising is the key to reaching shoppers beyond the search results page. We manage DSP campaigns across Amazon, Walmart, and emerging retail networks—combining onsite display, offsite programmatic, video, and CTV into a unified strategy that drives measurable results.",
     features: [
       { icon: Monitor, title: "Amazon DSP", description: "Programmatic display and video powered by Amazon's exclusive first-party audience data. Retarget shoppers, build lookalike audiences, and drive full-funnel awareness-to-purchase campaigns on and off Amazon." },
