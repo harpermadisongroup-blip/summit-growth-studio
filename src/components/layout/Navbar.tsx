@@ -52,7 +52,7 @@ const Navbar = () => {
             onMouseEnter={() => setOpenDropdown("solutions")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
               Solutions <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", openDropdown === "solutions" && "rotate-180")} />
             </button>
             <AnimatePresence>
@@ -86,7 +86,7 @@ const Navbar = () => {
             onMouseEnter={() => setOpenDropdown("platforms")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
-            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button className="flex items-center gap-1 px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
               Media Services <ChevronDown className={cn("w-3.5 h-3.5 transition-transform duration-200", openDropdown === "platforms" && "rotate-180")} />
             </button>
             <AnimatePresence>
@@ -114,16 +114,16 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <Link to="/who-we-help" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/who-we-help" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
             Who We Help
           </Link>
-          <Link to="/case-studies" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/case-studies" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
             Case Studies
           </Link>
-          <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
             About
           </Link>
-          <Link to="/insights" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/insights" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-accent-foreground hover:bg-accent rounded-lg transition-all duration-200">
             Blog
           </Link>
         </div>
