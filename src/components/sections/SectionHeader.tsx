@@ -36,7 +36,7 @@ const SectionHeader = ({ label, title, description, dark = false }: SectionHeade
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className={`mt-6 text-body-lg ${dark ? "text-secondary-foreground/60" : "text-muted-foreground"}`}
+          className={`mt-6 text-body-lg ${dark ? "text-secondary-foreground/70" : "text-muted-foreground"}`}
         >
           {description}
         </motion.p>
