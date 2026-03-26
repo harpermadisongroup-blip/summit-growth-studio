@@ -34,6 +34,11 @@ const Index = () => {
       </HeroSection>
 
 
+      {/* Divider */}
+      <div className="mx-auto max-w-site px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      </div>
+
       {/* Platform Logos */}
       <PlatformLogoStrip />
 
