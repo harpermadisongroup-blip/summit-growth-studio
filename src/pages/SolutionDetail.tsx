@@ -73,22 +73,9 @@ const solutionData: Record<string, {
   },
   "retail-media": {
     title: "Retail Media Management",
-    subtitle: "Manage Amazon Ads, Amazon DSP, Walmart Connect, Walmart DSP, Walmart Onsite Display, Target Roundel, and other RMNs—all from one unified platform built for real growth.",
+    subtitle: "Manage Amazon Ads, Walmart Connect, Target Roundel, and other RMNs—all from one unified platform built for real growth.",
     showNetworkStrip: true,
     showNetworksGrid: true,
-    dspSection: {
-      label: "DSP & Programmatic Display",
-      title: "Full-funnel DSP across every major retailer",
-      description: "Demand-side platform advertising is the key to reaching shoppers beyond the search results page. We manage DSP campaigns across Amazon, Walmart, and emerging retail networks—combining onsite display, offsite programmatic, video, and CTV into a unified strategy.",
-      capabilities: [
-        { icon: Monitor, title: "Amazon DSP", description: "Programmatic display and video powered by Amazon's exclusive first-party audience data. Retarget shoppers, build lookalike audiences, and drive full-funnel awareness-to-purchase campaigns on and off Amazon." },
-        { icon: ShoppingCart, title: "Walmart DSP", description: "Leverage Walmart's massive first-party shopper data for programmatic display across Walmart.com and the open web. Target by purchase behavior, category affinity, and in-store signals." },
-        { icon: Layers, title: "Walmart Onsite Display", description: "Premium display placements directly on Walmart.com—homepage, search, browse, and item pages. Drive visibility and consideration at the digital shelf with high-impact creative formats." },
-        { icon: Globe, title: "Cross-Retailer DSP Strategy", description: "Unify your DSP campaigns across Amazon, Walmart, and other retail networks in one platform. Eliminate silos, reduce overlap, and allocate budgets based on real-time performance signals." },
-        { icon: Eye, title: "Audience Management & Retargeting", description: "Build and manage audiences across retailers—purchase-based targeting, lookalike modeling, competitor conquesting, and sequential retargeting to move shoppers through the funnel." },
-        { icon: BarChart3, title: "DSP Measurement & Incrementality", description: "Go beyond impressions and clicks. Measure true incremental sales lift, new-to-brand acquisition, and cross-channel attribution to prove DSP's impact on your bottom line." },
-      ],
-    },
     description: "Retail media is the fastest-growing ad channel—but fragmented tools, multiple logins, and siloed data slow teams down. We centralize your entire retail media ecosystem so you can scale faster, optimize smarter, and turn every ad dollar into measurable revenue across Amazon, Walmart, and emerging networks.",
     features: [
       { icon: Globe, title: "Unified Multi-Retailer Management", description: "No more fragmented workflows or siloed data. Manage Amazon, Walmart, and 100+ retail networks from a single platform with centralized campaigns and reporting." },
@@ -105,6 +92,27 @@ const solutionData: Record<string, {
       { icon: ShoppingCart, title: "Digital Shelf Intelligence", description: "Monitor competitive pricing, share of voice shifts, and product placement across retailers. Connect digital shelf insights directly to campaign optimizations." },
       { icon: Monitor, title: "Unified Onsite & Offsite Orchestration", description: "Full-funnel retail media from a single platform—onsite sponsored ads plus offsite display, video, and premium CTV partners with holistic audience management." },
       { icon: BarChart3, title: "Full-Funnel Attribution & Insights", description: "Break down channel silos with cross-channel measurement that shows how onsite search, offsite display, and CTV work together to drive conversions." },
+    ],
+  },
+  "dsp-display": {
+    title: "DSP & Programmatic Display",
+    subtitle: "Full-funnel programmatic advertising across Amazon DSP, Walmart DSP, Walmart Onsite Display, and The Trade Desk—managed for performance at every stage of the shopper journey.",
+    description: "Demand-side platform advertising is the key to reaching shoppers beyond the search results page. We manage DSP campaigns across Amazon, Walmart, and emerging retail networks—combining onsite display, offsite programmatic, video, and CTV into a unified strategy that drives measurable results.",
+    features: [
+      { icon: Monitor, title: "Amazon DSP", description: "Programmatic display and video powered by Amazon's exclusive first-party audience data. Retarget shoppers, build lookalike audiences, and drive full-funnel awareness-to-purchase campaigns on and off Amazon." },
+      { icon: ShoppingCart, title: "Walmart DSP", description: "Leverage Walmart's massive first-party shopper data for programmatic display across Walmart.com and the open web. Target by purchase behavior, category affinity, and in-store signals." },
+      { icon: Layers, title: "Walmart Onsite Display", description: "Premium display placements directly on Walmart.com—homepage, search, browse, and item pages. Drive visibility and consideration at the digital shelf with high-impact creative formats." },
+      { icon: Globe, title: "The Trade Desk & Open Web", description: "Extend your reach beyond retailer walled gardens with programmatic display, video, and CTV across the open web—powered by The Trade Desk's premium inventory and audience targeting." },
+      { icon: Eye, title: "Audience Management & Retargeting", description: "Build and manage audiences across retailers and the open web—purchase-based targeting, lookalike modeling, competitor conquesting, and sequential retargeting to move shoppers through the funnel." },
+      { icon: BarChart3, title: "DSP Measurement & Incrementality", description: "Go beyond impressions and clicks. Measure true incremental sales lift, new-to-brand acquisition, and cross-channel attribution to prove DSP's impact on your bottom line." },
+    ],
+    skaiCapabilities: [
+      { icon: Brain, title: "AI-Powered Bid & Budget Optimization", description: "Machine-learning algorithms continuously adjust DSP bids and budgets in real time based on performance signals, audience engagement, and forecasted outcomes." },
+      { icon: Target, title: "Cross-Channel Audience Intelligence", description: "Unify audience insights across Amazon DSP, Walmart DSP, and search campaigns to build holistic shopper profiles and eliminate targeting redundancy." },
+      { icon: Layers, title: "Unified Onsite & Offsite Orchestration", description: "Manage onsite display, offsite programmatic, video, and CTV from a single platform with holistic audience management and frequency capping." },
+      { icon: Clock, title: "Real-Time Budget Allocation", description: "Dynamically shift DSP budgets across publishers and campaigns based on real-time performance signals—maximizing reach and conversion without manual intervention." },
+      { icon: Eye, title: "Creative Performance Intelligence", description: "AI-powered creative analysis identifies which ad formats, messages, and visuals drive the best results across each DSP platform." },
+      { icon: BarChart3, title: "Full-Funnel Attribution", description: "Connect upper-funnel DSP awareness campaigns to lower-funnel search and purchase conversions with unified cross-channel measurement." },
     ],
   },
   "amazon": {

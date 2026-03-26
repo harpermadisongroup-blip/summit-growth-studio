@@ -14,6 +14,7 @@ const solutions = [
 
 const mediaServices = [
   { label: "Retail Media (Amazon & Walmart)", href: "/solutions/retail-media" },
+  { label: "DSP & Programmatic Display", href: "/solutions/dsp-display" },
   { label: "Paid Search (Google & Microsoft)", href: "/solutions/paid-search" },
   { label: "Paid Social (Meta & More)", href: "/solutions/social" },
 ];
