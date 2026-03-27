@@ -79,12 +79,6 @@ const HeroSection = ({
 
         {showSkaiPartner && <SkaiPartnerBadge />}
 
-        {showSkaiPartner && (
-          <div className="-mx-6 mt-10">
-            <ClientLogoStrip />
-          </div>
-        )}
-
         {children}
       </div>
     </section>
