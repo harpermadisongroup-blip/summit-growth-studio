@@ -53,14 +53,14 @@ const FullServiceSections = () => {
   return (
     <>
       {/* Who This Is For */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-background">
+      <section className="relative py-24 md:py-32 overflow-hidden section-dark">
         <div className="mx-auto max-w-site px-6">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-body-sm font-medium tracking-wide uppercase text-primary mb-4"
+            className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
           >
             Who This Is For
           </motion.p>
@@ -69,7 +69,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-h2 text-foreground mb-4"
+            className="text-h2 text-secondary-foreground mb-4"
           >
             Your stage changes. Your partner doesn't.
           </motion.h2>
@@ -78,7 +78,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-muted-foreground mb-12"
+            className="max-w-3xl text-body-lg text-secondary-foreground/70 mb-12"
           >
             Full-service doesn't mean locked in. Whether you need us to run everything today or just specific channels during peak periods, we flex to match your business—not the other way around.
           </motion.p>
@@ -93,17 +93,17 @@ const FullServiceSections = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="group p-8 rounded-xl glass-card border border-border/50 hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                  className="group p-8 rounded-xl glass-card-dark border border-secondary-foreground/10 hover:border-accent/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                    <Icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
+                    <Icon className="w-6 h-6 text-accent" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">{profile.label}</h3>
                   <p className="text-body-sm text-muted-foreground mb-4">{profile.description}</p>
-                  <div className="pt-4 border-t border-border/50">
+                  <div className="pt-4 border-t border-secondary-foreground/10">
                     <div className="flex items-center gap-2">
-                      <ArrowLeftRight className="w-4 h-4 text-primary/80" />
-                      <p className="text-xs font-medium text-primary/80">{profile.flexibility}</p>
+                      <ArrowLeftRight className="w-4 h-4 text-accent/80" />
+                      <p className="text-xs font-medium text-accent/80">{profile.flexibility}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -114,15 +114,14 @@ const FullServiceSections = () => {
       </section>
 
       {/* Flexible Engagement */}
-      <section className="relative py-24 md:py-32 section-dark overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
+      <section className="relative py-24 md:py-32 overflow-hidden bg-background">
         <div className="mx-auto max-w-site px-6 relative">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-body-sm font-medium tracking-wide uppercase text-accent mb-4"
+            className="text-body-sm font-medium tracking-wide uppercase text-primary mb-4"
           >
             Flexible Engagement
           </motion.p>
@@ -131,7 +130,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-h2 text-secondary-foreground mb-4"
+            className="text-h2 text-foreground mb-4"
           >
             One partner, many configurations
           </motion.h2>
@@ -140,7 +139,7 @@ const FullServiceSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-3xl text-body-lg text-secondary-foreground/70 mb-12"
+            className="max-w-3xl text-body-lg text-muted-foreground mb-12"
           >
             Full-service today doesn't mean full-service forever. Move between engagement models as your team, budget, and strategy evolve—without switching platforms or partners.
           </motion.p>
@@ -155,22 +154,22 @@ const FullServiceSections = () => {
                 transition={{ delay: i * 0.08, duration: 0.5 }}
                 className={`flex items-center gap-4 p-5 rounded-xl border transition-all duration-300 ${
                   point.transition
-                    ? "border-accent/30 bg-accent/10"
-                    : "border-secondary-foreground/15 bg-secondary-foreground/[0.07] hover:border-secondary-foreground/25"
+                    ? "border-primary/30 bg-primary/10"
+                    : "border-border/50 bg-muted/50 hover:border-primary/25"
                 }`}
               >
                 {point.transition ? (
-                  <ArrowRight className="w-5 h-5 text-accent flex-shrink-0" />
+                  <ArrowRight className="w-5 h-5 text-primary flex-shrink-0" />
                 ) : (
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                 )}
-                <p className={`text-body-sm ${point.transition ? "text-accent font-medium" : "text-secondary-foreground/90"}`}>
+                <p className={`text-body-sm ${point.transition ? "text-primary font-medium" : "text-muted-foreground"}`}>
                   {point.text}
                 </p>
                 {point.transition && (
                   <Link
                     to="/solutions/self-serve"
-                    className="ml-auto text-xs font-medium text-accent hover:underline whitespace-nowrap"
+                    className="ml-auto text-xs font-medium text-primary hover:underline whitespace-nowrap"
                   >
                     Learn more →
                   </Link>
@@ -182,7 +181,7 @@ const FullServiceSections = () => {
       </section>
 
       {/* Use Cases */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-background">
+      <section className="relative py-24 md:py-32 overflow-hidden bg-surface-elevated">
         <div className="mx-auto max-w-site px-6">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
