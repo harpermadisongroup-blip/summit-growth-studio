@@ -38,7 +38,7 @@ const Index = () => {
       <ClientLogoStrip />
 
       {/* Content block between tickers */}
-      <section className="py-16 md:py-20">
+      <section className="py-20 md:py-24">
         <div className="mx-auto max-w-site px-6 text-center">
           <motion.h2 {...fadeInUp} className="text-h2 text-foreground max-w-3xl mx-auto">
             One team. One platform. <GradientText>Every channel covered.</GradientText>

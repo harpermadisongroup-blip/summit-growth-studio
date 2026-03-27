@@ -24,9 +24,7 @@ const LogoIcon = ({ icon }: { icon: string }) => {
       </svg>
     ),
     google: (
-      <svg viewBox="0 0 100 36" className="h-6 w-auto">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#4285F4">google</text>
-      </svg>
+      <img src="/logos/google.svg" alt="Google" className="h-6 w-auto" />
     ),
     meta: (
       <svg viewBox="0 0 72 36" className="h-6 w-auto">
@@ -34,9 +32,7 @@ const LogoIcon = ({ icon }: { icon: string }) => {
       </svg>
     ),
     youtube: (
-      <svg viewBox="0 0 120 36" className="h-6 w-auto">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#FF0000">youtube</text>
-      </svg>
+      <img src="/logos/youtube.svg" alt="YouTube" className="h-6 w-auto" />
     ),
     instacart: (
       <svg viewBox="0 0 130 36" className="h-6 w-auto">
