@@ -253,18 +253,16 @@ const SolutionDetail = () => {
       {data.showNetworkStrip && <RetailMediaNetworkStrip />}
       {data.logoStrip && <ChannelLogoStrip label={data.logoStrip.label} logos={data.logoStrip.logos} />}
 
-      <section className="relative py-24 md:py-32 section-dark overflow-hidden">
+      <section className="relative py-24 md:py-32 overflow-hidden bg-background">
         <FloatingElements variant="section" />
-        <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
         <div className="mx-auto max-w-site px-6 relative">
           <SectionHeader
             label="What's Included"
             title="How we deliver results"
             description={data.description}
-            dark
           />
           <div className="mt-12">
-            <FeatureGrid features={data.features} columns={data.features.length > 4 ? 3 : 2} variant="dark" />
+            <FeatureGrid features={data.features} columns={data.features.length > 4 ? 3 : 2} />
           </div>
         </div>
       </section>
