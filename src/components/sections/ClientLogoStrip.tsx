@@ -26,15 +26,15 @@ const ClientLogoStrip = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-body-sm text-muted-foreground text-center mb-8 tracking-wide uppercase font-medium"
+          className="text-body-sm text-primary-foreground/60 text-center mb-8 tracking-wide uppercase font-medium"
         >
           Trusted by brands we're proud to partner with
         </motion.p>
       </div>
       <div className="relative">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-primary to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-primary to-transparent z-10 pointer-events-none" />
 
         <div className="flex animate-marquee w-max gap-12 md:gap-16">
           {doubled.map((logo, i) => (
