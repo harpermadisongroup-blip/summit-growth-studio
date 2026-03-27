@@ -61,7 +61,7 @@ const HeroSection = ({
           >
             {primaryCta && (
               <Link to={primaryCta.href}>
-                <Button size="lg" className="bg-primary !text-primary-foreground hover:bg-primary/90 btn-glow transition-all gap-2 text-base px-10 h-14 font-semibold">
+                <Button size="lg" className="bg-primary-foreground !text-primary hover:bg-primary-foreground/90 transition-all gap-2 text-base px-10 h-14 font-semibold">
                   {primaryCta.label}
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -69,7 +69,7 @@ const HeroSection = ({
             )}
             {secondaryCta && (
               <Link to={secondaryCta.href}>
-                <Button variant="outline" size="lg" className="border-border text-foreground hover:bg-muted text-base px-10 h-14 font-semibold">
+                <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-10 h-14 font-semibold">
                   {secondaryCta.label}
                 </Button>
               </Link>
