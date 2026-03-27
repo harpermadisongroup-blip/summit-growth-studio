@@ -83,12 +83,5 @@ const HeroSection = ({
       </div>
     </section>
   );
-};
-
-// Render ClientLogoStrip outside the dark hero in the parent
-      </div>
-    </section>
-  );
-};
 
 export default HeroSection;
