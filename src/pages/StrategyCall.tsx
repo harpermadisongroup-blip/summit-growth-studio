@@ -38,7 +38,7 @@ const StrategyCall = () => {
                 <h3 className="text-lg font-semibold text-foreground">Who this is for:</h3>
                 <ul className="space-y-3">
                   {[
-                    "Brands spending $50K+/month on digital advertising",
+                    "Brands spending $25K+/month on digital advertising",
                     "Teams managing 2+ advertising channels",
                     "Companies ready to scale but hitting performance ceilings",
                     "Agencies seeking enterprise platform access for clients",
