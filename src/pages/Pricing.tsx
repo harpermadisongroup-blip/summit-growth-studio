@@ -20,7 +20,7 @@ const plans = [
     name: "Self-Serve",
     icon: Zap,
     description: "Platform access with expert guidance when you need it.",
-    price: "2,500",
+    price: "1,500",
     period: "/mo",
     features: [
       "Skai platform access",
@@ -177,7 +177,7 @@ const Pricing = () => {
                   </span>
                   {plan.price !== "Custom" && (
                     <p className={`text-xs mt-1 ${plan.highlight ? "text-secondary-foreground/50" : "text-muted-foreground/70"}`}>
-                      Placeholder pricing — contact us for actual rates
+                      Pricing starts at ${plan.price}{plan.period} — contact us for actual quote
                     </p>
                   )}
                 </div>
