@@ -114,7 +114,7 @@ const audienceCards = [
     bullets: [
       "Access enterprise platforms without enterprise budgets",
       "Get a full performance team without the hiring process",
-      "Scale from $50K to $5M+ in monthly ad spend with one partner",
+      "Scale from $25K to $5M+ in monthly ad spend with one partner",
     ],
   },
   {
