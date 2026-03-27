@@ -57,6 +57,7 @@ const StrategyCall = () => {
                   {[
                     "A review of your current advertising performance",
                     "Identification of efficiency and growth opportunities",
+                    "GenAI-powered marketing agent",
                     "A clear recommendation on next steps",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-body text-muted-foreground">
