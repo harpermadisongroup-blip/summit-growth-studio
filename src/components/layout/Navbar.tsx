@@ -45,8 +45,8 @@ const Navbar = () => {
           <img src={alliedLogo} alt="Allied Digital Strategies" className="h-11 w-auto" />
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        {/* Desktop Nav - centered */}
+        <div className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
           {/* Solutions Dropdown */}
           <div
             className="relative"
@@ -134,11 +134,6 @@ const Navbar = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <Link to="/contact">
-            <Button variant="ghost" size="sm" className="text-muted-foreground">
-              Contact
-            </Button>
-          </Link>
           <Link to="/strategy-call">
             <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground btn-glow">
               Schedule a Strategy Call
