@@ -28,7 +28,7 @@ const HeroSection = ({
   children,
 }: HeroSectionProps) => {
   return (
-    <section className={`relative pt-40 pb-20 md:pt-56 md:pb-32 overflow-hidden ${dark ? "section-dark" : "bg-primary"}`}>
+    <section className={`relative pt-28 pb-14 md:pt-36 md:pb-20 overflow-hidden ${dark ? "section-dark" : "bg-primary"}`}>
       {/* Background layers */}
       <FloatingElements variant="hero" />
       <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
