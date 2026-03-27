@@ -36,7 +36,7 @@ const plans = [
     name: "Full-Service",
     icon: Shield,
     description: "Hands-on campaign management across all your channels.",
-    price: "7,500",
+    price: "5,000",
     period: "/mo",
     features: [
       "Everything in Self-Serve",
