@@ -19,7 +19,7 @@ const ClientLogoStrip = () => {
   const doubled = [...clientLogos, ...clientLogos];
 
   return (
-    <section className="pt-14 pb-20 md:pt-18 md:pb-24 overflow-hidden">
+    <section className="pt-14 pb-12 md:pt-18 md:pb-14 overflow-hidden">
       <div className="mx-auto max-w-site px-6">
         <motion.p
           initial={{ opacity: 0 }}
