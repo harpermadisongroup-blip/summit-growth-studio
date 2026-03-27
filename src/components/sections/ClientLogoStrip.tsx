@@ -19,7 +19,7 @@ const ClientLogoStrip = () => {
   const doubled = [...clientLogos, ...clientLogos];
 
   return (
-    <section className="pt-14 pb-12 md:pt-18 md:pb-14 overflow-hidden">
+    <section className="pt-14 pb-12 md:pt-18 md:pb-14 overflow-hidden bg-surface-elevated">
       <div className="mx-auto max-w-site px-6">
         <motion.p
           initial={{ opacity: 0 }}
@@ -33,8 +33,8 @@ const ClientLogoStrip = () => {
       </div>
       <div className="relative">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-surface-elevated to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-surface-elevated to-transparent z-10 pointer-events-none" />
 
         <div className="flex animate-marquee w-max gap-12 md:gap-16">
           {doubled.map((logo, i) => (
