@@ -14,43 +14,43 @@ const logos = [
 const LogoIcon = ({ icon }: { icon: string }) => {
   const svgMap: Record<string, React.ReactNode> = {
     amazon: (
-      <svg viewBox="0 0 120 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">amazon</text>
+      <svg viewBox="0 0 120 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#FF9900">amazon</text>
       </svg>
     ),
     walmart: (
-      <svg viewBox="0 0 120 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">walmart</text>
+      <svg viewBox="0 0 120 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#0071CE">walmart</text>
       </svg>
     ),
     google: (
-      <svg viewBox="0 0 100 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">google</text>
+      <svg viewBox="0 0 100 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#4285F4">google</text>
       </svg>
     ),
     meta: (
-      <svg viewBox="0 0 72 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">meta</text>
+      <svg viewBox="0 0 72 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#0081FB">meta</text>
       </svg>
     ),
     youtube: (
-      <svg viewBox="0 0 120 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">youtube</text>
+      <svg viewBox="0 0 120 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#FF0000">youtube</text>
       </svg>
     ),
     instacart: (
-      <svg viewBox="0 0 130 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">instacart</text>
+      <svg viewBox="0 0 130 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#43B02A">instacart</text>
       </svg>
     ),
     criteo: (
-      <svg viewBox="0 0 90 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">criteo</text>
+      <svg viewBox="0 0 90 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#F47A20">criteo</text>
       </svg>
     ),
     skai: (
-      <svg viewBox="0 0 60 36" className="h-6 w-auto" fill="currentColor">
-        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1">skai</text>
+      <svg viewBox="0 0 60 36" className="h-6 w-auto">
+        <text x="0" y="28" fontFamily="Inter, sans-serif" fontWeight="700" fontSize="28" letterSpacing="-1" fill="#1A1A2E">skai</text>
       </svg>
     ),
   };
@@ -66,7 +66,7 @@ const PlatformLogoStrip = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="text-body-sm text-muted-foreground text-center mb-8"
+        className="text-body-sm text-muted-foreground text-center mb-8 tracking-wide uppercase font-medium"
       >
         We manage campaigns across the platforms that matter
       </motion.p>
@@ -80,7 +80,7 @@ const PlatformLogoStrip = () => {
           {doubledLogos.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
-              className="flex items-center mx-8 md:mx-12 text-muted-foreground/30 hover:text-muted-foreground/60 transition-colors duration-300"
+              className="flex items-center mx-8 md:mx-12 opacity-80 hover:opacity-100 transition-opacity duration-300"
             >
               <LogoIcon icon={logo.icon} />
             </div>
