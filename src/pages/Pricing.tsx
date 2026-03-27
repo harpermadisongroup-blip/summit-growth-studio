@@ -128,9 +128,6 @@ const Pricing = () => {
         <div className="absolute inset-0 bg-grid-pattern pointer-events-none" />
 
         <div className="mx-auto max-w-site px-6 relative text-center">
-          <motion.p {...fadeInUp} className="text-body-sm font-medium text-accent tracking-wide uppercase mb-4">
-            Pricing
-          </motion.p>
           <motion.h1
             {...fadeInUp}
             className="text-h1 md:text-display max-w-3xl mx-auto text-foreground"
