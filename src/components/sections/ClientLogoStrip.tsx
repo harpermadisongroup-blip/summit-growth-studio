@@ -45,7 +45,7 @@ const ClientLogoStrip = () => {
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="h-12 md:h-16 w-auto object-contain"
+                className="h-12 md:h-16 w-auto object-contain brightness-0 invert"
               />
             </div>
           ))}
