@@ -42,7 +42,7 @@ const Navbar = () => {
       <nav className="mx-auto max-w-site px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={alliedLogo} alt="Allied Digital Strategies" className="h-14 w-auto" />
+          <img src={alliedLogo} alt="Allied Digital Strategies" className="h-11 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
