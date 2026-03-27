@@ -79,13 +79,13 @@ const HeroSection = ({
 
         {showSkaiPartner && <SkaiPartnerBadge />}
 
-        {showSkaiPartner && (
-          <div className="-mx-6 mt-10">
-            <ClientLogoStrip />
-          </div>
-        )}
-
         {children}
+      </div>
+    </section>
+  );
+};
+
+// Render ClientLogoStrip outside the dark hero in the parent
       </div>
     </section>
   );
