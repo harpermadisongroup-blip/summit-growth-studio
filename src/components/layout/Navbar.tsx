@@ -124,9 +124,6 @@ const Navbar = () => {
           <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             About
           </Link>
-          <Link to="/about" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
-            About
-          </Link>
           <Link to="/pricing" className="px-3 py-2 text-body-sm text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </Link>
