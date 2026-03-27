@@ -118,6 +118,7 @@ const PlatformDetail = () => {
             <SkaiLogo
               alt="Skai"
               className="h-24 md:h-28 mx-auto"
+              variant="white"
             />
           ) : (
             data.title

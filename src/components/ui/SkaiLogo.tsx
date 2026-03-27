@@ -6,6 +6,7 @@ interface SkaiLogoProps {
   className?: string;
   src?: string;
   whiteThreshold?: number;
+  variant?: "dark" | "white";
 }
 
 const SkaiLogo = ({
@@ -13,6 +14,7 @@ const SkaiLogo = ({
   className,
   src = "/logos/skai.png",
   whiteThreshold = 235,
+  variant = "dark",
 }: SkaiLogoProps) => {
   const [processedSrc, setProcessedSrc] = useState(src);
 
@@ -47,9 +49,15 @@ const SkaiLogo = ({
         }
 
         const alphaScale = Math.max(0, Math.min(1, (whiteThreshold - luminance) / whiteThreshold));
-        data[i] = 0;
-        data[i + 1] = 0;
-        data[i + 2] = 0;
+        if (variant === "white") {
+          data[i] = 255;
+          data[i + 1] = 255;
+          data[i + 2] = 255;
+        } else {
+          data[i] = 0;
+          data[i + 1] = 0;
+          data[i + 2] = 0;
+        }
         data[i + 3] = Math.round(a * alphaScale);
       }
 
