@@ -37,10 +37,17 @@ const Index = () => {
       {/* Client Logos */}
       <ClientLogoStrip />
 
-      {/* Divider */}
-      <div className="mx-auto max-w-site px-6">
-        <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      </div>
+      {/* Content block between tickers */}
+      <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-site px-6 text-center">
+          <motion.h2 {...fadeInUp} className="text-h2 text-foreground max-w-3xl mx-auto">
+            One team. One platform. <GradientText>Every channel covered.</GradientText>
+          </motion.h2>
+          <motion.p {...fadeInUp} className="mt-4 text-body-lg text-muted-foreground max-w-2xl mx-auto">
+            We unify your advertising strategy across search, social, retail media, and programmatic—so you can stop juggling tools and start scaling results.
+          </motion.p>
+        </div>
+      </section>
 
       {/* Platform Logos */}
       <PlatformLogoStrip />
