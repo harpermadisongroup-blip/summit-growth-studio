@@ -112,7 +112,7 @@ const Pricing = () => {
     const monthly = Math.round((midSpend * baseRate * channelMultiplier) / 100) * 100;
 
     return {
-      monthly: Math.max(monthly, managementLevel === "full" ? 5000 : 2000),
+      monthly: Math.max(monthly, managementLevel === "full" ? 5000 : 1500),
       channels: channelCount,
       spend: spend.label,
     };
