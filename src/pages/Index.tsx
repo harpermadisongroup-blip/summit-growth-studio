@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
 import PlatformLogoStrip from "@/components/sections/PlatformLogoStrip";
+import ClientLogoStrip from "@/components/sections/ClientLogoStrip";
 
 import PlatformLogoGrid from "@/components/ui/PlatformLogoGrid";
 import DashboardMockup from "@/components/ui/DashboardMockup";
@@ -33,6 +34,8 @@ const Index = () => {
         
       </HeroSection>
 
+      {/* Client Logos */}
+      <ClientLogoStrip />
 
       {/* Divider */}
       <div className="mx-auto max-w-site px-6">
