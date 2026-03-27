@@ -77,7 +77,7 @@ const SkaiLogo = ({
     return () => {
       isMounted = false;
     };
-  }, [src, whiteThreshold]);
+  }, [src, whiteThreshold, variant]);
 
   return <img src={processedSrc} alt={alt} className={cn("w-auto", className)} decoding="async" />;
 };
