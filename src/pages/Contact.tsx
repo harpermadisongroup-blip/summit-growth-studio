@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import PublisherMultiSelect from "@/components/ui/PublisherMultiSelect";
 import { Mail, MapPin } from "lucide-react";
+import strategyMeetingImg from "@/assets/strategy-meeting.jpg";
 
 const Contact = () => {
   return (
