@@ -5,6 +5,7 @@ import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
+import heroSolutionsBg from "@/assets/hero-solutions-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
