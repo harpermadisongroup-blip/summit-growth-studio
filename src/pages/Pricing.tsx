@@ -102,7 +102,7 @@ const fullServeSpendRanges = [
 const SELF_SERVE_RATE = 0.02;
 const SELF_SERVE_MIN = 1500;
 const FULL_SERVE_RATE = 0.10;
-const FULL_SERVE_MIN = 25000;
+const FULL_SERVE_MIN = 2500;
 
 const Pricing = () => {
   const [selectedChannels, setSelectedChannels] = useState<string[]>([]);
