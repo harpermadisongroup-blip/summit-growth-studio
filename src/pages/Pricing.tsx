@@ -83,7 +83,7 @@ const channelOptions = [
   { label: "Criteo", value: "criteo" },
 ];
 
-const spendRanges = [
+const selfServeSpendRanges = [
   { label: "$0 – $50k", min: 0, max: 50000 },
   { label: "$50k – $100k", min: 50000, max: 100000 },
   { label: "$100k – $250k", min: 100000, max: 250000 },
@@ -91,13 +91,25 @@ const spendRanges = [
   { label: "$500k+", min: 500000, max: 1000000 },
 ];
 
+const fullServeSpendRanges = [
+  { label: "$0 – $25k", min: 0, max: 25000 },
+  { label: "$25k – $50k", min: 25000, max: 50000 },
+  { label: "$50k – $75k", min: 50000, max: 75000 },
+  { label: "$75k – $100k", min: 75000, max: 100000 },
+  { label: "$100k+", min: 100000, max: 200000 },
+];
+
 const SELF_SERVE_RATE = 0.02;
 const SELF_SERVE_MIN = 1500;
+const FULL_SERVE_RATE = 0.10;
+const FULL_SERVE_MIN = 25000;
 
 const Pricing = () => {
   const [selectedChannels, setSelectedChannels] = useState<string[]>([]);
   const [spendIndex, setSpendIndex] = useState(1);
   const [managementLevel, setManagementLevel] = useState<"self" | "full">("full");
+
+  const spendRanges = managementLevel === "self" ? selfServeSpendRanges : fullServeSpendRanges;
 
   const toggleChannel = (value: string) => {
     setSelectedChannels((prev) =>
@@ -105,14 +117,20 @@ const Pricing = () => {
     );
   };
 
+  const handleManagementChange = (level: "self" | "full") => {
+    setManagementLevel(level);
+    setSpendIndex(1);
+  };
+
   const estimate = useMemo(() => {
-    const spend = spendRanges[spendIndex];
+    const ranges = managementLevel === "self" ? selfServeSpendRanges : fullServeSpendRanges;
+    const spend = ranges[spendIndex];
     const channelCount = Math.max(selectedChannels.length, 1);
 
     if (managementLevel === "self") {
       const lowFee = Math.max(Math.round(spend.min * SELF_SERVE_RATE / 100) * 100, SELF_SERVE_MIN);
       const highFee = Math.max(Math.round(spend.max * SELF_SERVE_RATE / 100) * 100, SELF_SERVE_MIN);
-      const isLastBucket = spendIndex === spendRanges.length - 1;
+      const isLastBucket = spendIndex === selfServeSpendRanges.length - 1;
 
       return {
         monthlyLow: lowFee,
@@ -122,15 +140,14 @@ const Pricing = () => {
         spend: spend.label,
       };
     } else {
-      const midSpend = (spend.min + spend.max) / 2;
-      const baseRate = 0.12;
-      const channelMultiplier = 1 + (channelCount - 1) * 0.08;
-      const monthly = Math.max(Math.round((midSpend * baseRate * channelMultiplier) / 100) * 100, 5000);
+      const lowFee = Math.max(Math.round(spend.min * FULL_SERVE_RATE / 100) * 100, FULL_SERVE_MIN);
+      const highFee = Math.max(Math.round(spend.max * FULL_SERVE_RATE / 100) * 100, FULL_SERVE_MIN);
+      const isLastBucket = spendIndex === fullServeSpendRanges.length - 1;
 
       return {
-        monthly,
-        monthlyLow: null,
-        monthlyHigh: null,
+        monthlyLow: lowFee,
+        monthlyHigh: isLastBucket ? null : highFee,
+        monthly: null,
         channels: channelCount,
         spend: spend.label,
       };
@@ -306,7 +323,7 @@ const Pricing = () => {
                   ].map((opt) => (
                     <button
                       key={opt.key}
-                      onClick={() => setManagementLevel(opt.key)}
+                      onClick={() => handleManagementChange(opt.key)}
                       className={`p-4 rounded-lg text-left transition-all border ${
                         managementLevel === opt.key
                           ? "bg-primary text-primary-foreground border-primary"
