@@ -158,10 +158,14 @@ const Pricing = () => {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-primary">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroPricingBg})` }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
         <FloatingElements variant="hero" />
-        <div className="absolute inset-0 bg-mesh-hero pointer-events-none" />
-        <div className="absolute inset-0 bg-grid-pattern pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
 
         <div className="mx-auto max-w-site px-6 relative text-center">
           <motion.h1
