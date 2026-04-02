@@ -78,6 +78,7 @@ const Index = () => {
               { icon: Target, title: "Performance plateaus", desc: "You've optimized what you can with the tools you have.", num: "02" },
               { icon: BarChart3, title: "Channels multiply", desc: "Every new platform adds complexity without adding clarity.", num: "03" },
               { icon: Users, title: "Teams get stretched thin", desc: "There's never enough bandwidth to do it all well.", num: "04" },
+              { icon: HeartHandshake, title: "Agencies treat you like a number", desc: "You're passed off to junior staff and lost in a sea of accounts.", num: "05" },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
