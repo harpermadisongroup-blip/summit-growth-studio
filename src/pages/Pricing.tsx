@@ -67,7 +67,7 @@ const plans = [
       "Dedicated analytics team",
       "Quarterly business reviews",
     ],
-    cta: "Contact Us",
+    cta: "Get Started",
     highlight: false,
   },
 ];
