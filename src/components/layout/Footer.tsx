@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="mb-4">
               <img src={alliedLogoDark} alt="Allied Digital Strategies" className="h-14 w-auto" />
             </div>
-            <p className="text-body-sm text-secondary-foreground/50 max-w-xs">
+            <p className="text-body-sm text-secondary-foreground/70 max-w-xs">
               Enterprise ad tech, fully managed. Access the platforms and performance your brand deserves.
             </p>
           </div>
