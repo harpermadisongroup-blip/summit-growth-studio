@@ -31,6 +31,7 @@ const Index = () => {
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
         secondaryCta={{ label: "Book a Demo", href: "/contact" }}
         showSkaiPartner
+        backgroundImage={heroTeamBg}
       >
         
       </HeroSection>
