@@ -7,6 +7,7 @@ import PageLayout from "@/components/layout/PageLayout";
 import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
 import CTABlock from "@/components/sections/CTABlock";
+import heroPricingBg from "@/assets/hero-pricing-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
