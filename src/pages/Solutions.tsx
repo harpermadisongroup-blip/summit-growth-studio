@@ -7,6 +7,7 @@ import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Settings, Users } from "lucide-react";
+import heroSolutionsBg from "@/assets/hero-solutions-bg.jpg";
 import { Button } from "@/components/ui/button";
 
 const models = [
