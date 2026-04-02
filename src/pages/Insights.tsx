@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
+import heroCaseStudiesBg from "@/assets/hero-casestudies-bg.jpg";
 
 const articles = [
   {
