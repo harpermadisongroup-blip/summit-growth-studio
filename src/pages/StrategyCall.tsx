@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import PublisherMultiSelect from "@/components/ui/PublisherMultiSelect";
 import { Check, Shield, Users, Zap } from "lucide-react";
+import strategyMeetingImg from "@/assets/strategy-meeting.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
@@ -80,6 +81,18 @@ const StrategyCall = () => {
                     {t.label}
                   </div>
                 ))}
+              </div>
+
+              {/* Team Photo */}
+              <div className="mt-10 rounded-xl overflow-hidden">
+                <img
+                  src={strategyMeetingImg}
+                  alt="Allied Digital Strategies team in a collaborative strategy session"
+                  className="w-full h-auto object-cover rounded-xl"
+                  loading="lazy"
+                  width={1024}
+                  height={1360}
+                />
               </div>
             </motion.div>
 
