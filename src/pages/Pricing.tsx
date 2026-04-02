@@ -48,7 +48,7 @@ const plans = [
       "Precision budget & bid optimization",
       "Insight-driven reporting",
     ],
-    cta: "Schedule a Call",
+    cta: "Get Started",
     highlight: true,
   },
   {
