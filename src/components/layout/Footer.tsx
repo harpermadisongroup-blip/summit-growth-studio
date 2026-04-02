@@ -43,7 +43,7 @@ const Footer = () => {
             <h4 className="font-semibold text-body-sm mb-4 text-accent">Legal</h4>
             <ul className="space-y-2.5">
               <li><a href="https://skai.io/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-body-sm text-secondary-foreground hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><Link to="/terms" className="text-body-sm text-secondary-foreground/40 hover:text-accent transition-colors">Terms of Service</Link></li>
+              
             </ul>
           </div>
         </div>
