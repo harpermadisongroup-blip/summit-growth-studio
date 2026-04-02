@@ -8,6 +8,7 @@ import IconBadge from "@/components/ui/IconBadge";
 import FloatingElements from "@/components/ui/FloatingElements";
 import MetricCounter from "@/components/ui/MetricCounter";
 import { motion } from "framer-motion";
+import heroCaseStudiesBg from "@/assets/hero-casestudies-bg.jpg";
 import { ArrowRight, TrendingUp, Target, BarChart3 } from "lucide-react";
 
 const caseStudies = [
