@@ -170,7 +170,7 @@ const Pricing = () => {
         <div className="mx-auto max-w-site px-6 relative text-center">
           <motion.h1
             {...fadeInUp}
-            className="text-h1 md:text-display max-w-3xl mx-auto text-foreground"
+            className="text-h1 md:text-display max-w-3xl mx-auto text-primary-foreground"
           >
             Transparent pricing, <GradientText>real results.</GradientText>
           </motion.h1>
