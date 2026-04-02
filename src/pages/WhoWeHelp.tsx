@@ -8,6 +8,7 @@ import IconBadge from "@/components/ui/IconBadge";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import heroWhoWeHelpBg from "@/assets/hero-whowehelp-bg.jpg";
 import { motion } from "framer-motion";
 import {
   ArrowRight, TrendingUp, Target, BarChart3, Users, Zap, Shield,
