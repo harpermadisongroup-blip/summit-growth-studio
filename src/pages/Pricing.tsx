@@ -191,7 +191,7 @@ const Pricing = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className={`relative rounded-2xl p-8 flex flex-col ${
+                className={`group relative rounded-2xl p-8 flex flex-col ${
                   plan.highlight
                     ? "bg-mesh-cta text-secondary-foreground ring-2 ring-accent/30 scale-[1.02]"
                     : "glass-card"
