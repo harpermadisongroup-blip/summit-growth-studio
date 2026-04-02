@@ -195,6 +195,7 @@ const WhoWeHelpHub = () => {
         headline="Built for teams that need enterprise performance."
         subheadline="Whether you're a startup, growth-stage brand, performance agency, or enterprise team in transition—Allied has a model built for you."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroWhoWeHelpBg}
       />
 
       <section className="py-12 border-b border-border/50 bg-background">

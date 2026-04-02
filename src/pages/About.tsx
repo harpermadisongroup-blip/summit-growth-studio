@@ -29,6 +29,7 @@ const About = () => {
         headline="Enterprise performance without enterprise barriers."
         subheadline="Allied Digital Strategies was built to close the gap between the advertising technology available to the largest brands and the growing companies that need it most."
         centered
+        backgroundImage={heroAboutBg}
         showSkaiPartner
       />
 

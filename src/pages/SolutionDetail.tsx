@@ -248,6 +248,7 @@ const SolutionDetail = () => {
         headline={data.title}
         subheadline={data.subtitle}
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroSolutionsBg}
         secondaryCta={{ label: "View all solutions", href: "/solutions" }}
       />
 

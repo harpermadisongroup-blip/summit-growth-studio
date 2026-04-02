@@ -36,6 +36,7 @@ const Solutions = () => {
         headline="Enterprise ad tech with performance options built around your team."
         subheadline="Choose full-service management or a supported self-serve model. Either way, you get enterprise-grade technology and expert-level performance."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroSolutionsBg}
         showSkaiPartner
       />
 

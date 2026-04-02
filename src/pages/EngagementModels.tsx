@@ -34,6 +34,7 @@ const EngagementModels = () => {
         headline="Two ways to access enterprise performance."
         subheadline="Whether you want a fully managed solution or prefer to run campaigns yourself with expert support—we have a model built for your team."
         centered
+        backgroundImage={heroSolutionsBg}
       />
 
       {/* Model Cards */}

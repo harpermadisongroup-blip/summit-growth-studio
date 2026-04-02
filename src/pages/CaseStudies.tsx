@@ -138,6 +138,7 @@ export const CaseStudiesHub = () => {
         headline="Real results. Real brands."
         subheadline="From 42% ROAS improvement to 4x scaled spend to 60% faster onboarding—see how growth-stage brands and agencies use Allied's enterprise technology and flexible engagement models to unlock measurable performance gains."
         centered
+        backgroundImage={heroCaseStudiesBg}
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
       />
 
