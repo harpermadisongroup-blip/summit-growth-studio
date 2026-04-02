@@ -102,17 +102,24 @@ const Pricing = () => {
     );
   };
 
+  const selfServeFixedPrices = [2000, 2300, 4500, 10500, 22500];
+
   const estimate = useMemo(() => {
     const spend = spendRanges[spendIndex];
-    const midSpend = (spend.min + spend.max) / 2;
     const channelCount = Math.max(selectedChannels.length, 1);
 
-    const baseRate = managementLevel === "full" ? 0.12 : 0.06;
-    const channelMultiplier = 1 + (channelCount - 1) * 0.08;
-    const monthly = Math.round((midSpend * baseRate * channelMultiplier) / 100) * 100;
+    let monthly: number;
+    if (managementLevel === "self") {
+      monthly = selfServeFixedPrices[spendIndex];
+    } else {
+      const midSpend = (spend.min + spend.max) / 2;
+      const baseRate = 0.12;
+      const channelMultiplier = 1 + (channelCount - 1) * 0.08;
+      monthly = Math.max(Math.round((midSpend * baseRate * channelMultiplier) / 100) * 100, 5000);
+    }
 
     return {
-      monthly: Math.max(monthly, managementLevel === "full" ? 5000 : 1500),
+      monthly,
       channels: channelCount,
       spend: spend.label,
     };
