@@ -6,6 +6,7 @@ import IconBadge from "@/components/ui/IconBadge";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Target, Zap, Users, Shield } from "lucide-react";
+import heroAboutBg from "@/assets/hero-about-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
