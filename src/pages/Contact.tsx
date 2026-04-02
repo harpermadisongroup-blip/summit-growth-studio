@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import PublisherMultiSelect from "@/components/ui/PublisherMultiSelect";
 import { Mail, MapPin } from "lucide-react";
 import strategyMeetingImg from "@/assets/strategy-meeting.jpg";
+import heroContactBg from "@/assets/hero-contact-bg.jpg";
 
 const Contact = () => {
   return (
