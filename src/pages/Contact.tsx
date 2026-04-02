@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import PublisherMultiSelect from "@/components/ui/PublisherMultiSelect";
 import { Mail, MapPin } from "lucide-react";
 import strategyMeetingImg from "@/assets/strategy-meeting.jpg";
+import heroContactBg from "@/assets/hero-contact-bg.jpg";
 
 const Contact = () => {
   return (
@@ -17,6 +18,7 @@ const Contact = () => {
         headline="Get in touch."
         subheadline="Whether you have a question about our services, want to explore a partnership, or just want to learn more—we'd love to hear from you."
         centered
+        backgroundImage={heroContactBg}
       />
 
       <section className="py-24 md:py-32">

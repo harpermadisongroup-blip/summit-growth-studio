@@ -8,6 +8,7 @@ import SkaiLogo from "@/components/ui/SkaiLogo";
 import RetailMediaNetworkStrip from "@/components/sections/RetailMediaNetworkStrip";
 import ChannelLogoStrip from "@/components/sections/ChannelLogoStrip";
 import NetworksWeManageGrid from "@/components/sections/NetworksWeManageGrid";
+import heroSolutionsBg from "@/assets/hero-solutions-bg.jpg";
 import SelfServeSections from "@/components/sections/SelfServeSections";
 import FullServiceSections from "@/components/sections/FullServiceSections";
 import { useParams, Link } from "react-router-dom";
@@ -247,6 +248,7 @@ const SolutionDetail = () => {
         headline={data.title}
         subheadline={data.subtitle}
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroSolutionsBg}
         secondaryCta={{ label: "View all solutions", href: "/solutions" }}
       />
 

@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
+import heroCaseStudiesBg from "@/assets/hero-casestudies-bg.jpg";
 
 const articles = [
   {
@@ -70,6 +71,7 @@ const Insights = () => {
         headline="Thinking that drives performance."
         subheadline="Practitioner perspectives on retail media, paid search, paid social, and the enterprise technology shaping modern advertising. From the team behind $8B+ in managed ad spend."
         centered
+        backgroundImage={heroCaseStudiesBg}
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
       />
 

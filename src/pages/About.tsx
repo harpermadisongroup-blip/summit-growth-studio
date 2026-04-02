@@ -6,6 +6,7 @@ import IconBadge from "@/components/ui/IconBadge";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Target, Zap, Users, Shield } from "lucide-react";
+import heroAboutBg from "@/assets/hero-about-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
@@ -28,6 +29,7 @@ const About = () => {
         headline="Enterprise performance without enterprise barriers."
         subheadline="Allied Digital Strategies was built to close the gap between the advertising technology available to the largest brands and the growing companies that need it most."
         centered
+        backgroundImage={heroAboutBg}
         showSkaiPartner
       />
 

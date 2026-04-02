@@ -5,6 +5,7 @@ import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
+import heroSolutionsBg from "@/assets/hero-solutions-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
@@ -33,6 +34,7 @@ const EngagementModels = () => {
         headline="Two ways to access enterprise performance."
         subheadline="Whether you want a fully managed solution or prefer to run campaigns yourself with expert support—we have a model built for your team."
         centered
+        backgroundImage={heroSolutionsBg}
       />
 
       {/* Model Cards */}

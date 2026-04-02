@@ -7,6 +7,7 @@ import PageLayout from "@/components/layout/PageLayout";
 import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
 import CTABlock from "@/components/sections/CTABlock";
+import heroPricingBg from "@/assets/hero-pricing-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
@@ -157,19 +158,23 @@ const Pricing = () => {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-primary">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroPricingBg})` }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
         <FloatingElements variant="hero" />
-        <div className="absolute inset-0 bg-mesh-hero pointer-events-none" />
-        <div className="absolute inset-0 bg-grid-pattern pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
 
         <div className="mx-auto max-w-site px-6 relative text-center">
           <motion.h1
             {...fadeInUp}
-            className="text-h1 md:text-display max-w-3xl mx-auto text-foreground"
+            className="text-h1 md:text-display max-w-3xl mx-auto text-primary-foreground"
           >
             Transparent pricing, <GradientText>real results.</GradientText>
           </motion.h1>
-          <motion.p {...fadeInUp} className="mt-6 text-body-lg text-muted-foreground max-w-2xl mx-auto">
+          <motion.p {...fadeInUp} className="mt-6 text-body-lg text-primary-foreground/70 max-w-2xl mx-auto">
             Choose the engagement model that fits your growth stage. All plans include access to Skai's enterprise platform.
           </motion.p>
         </div>

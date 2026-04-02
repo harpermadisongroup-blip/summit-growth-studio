@@ -7,6 +7,7 @@ import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Settings, Users } from "lucide-react";
+import heroSolutionsBg from "@/assets/hero-solutions-bg.jpg";
 import { Button } from "@/components/ui/button";
 
 const models = [
@@ -35,6 +36,7 @@ const Solutions = () => {
         headline="Enterprise ad tech with performance options built around your team."
         subheadline="Choose full-service management or a supported self-serve model. Either way, you get enterprise-grade technology and expert-level performance."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroSolutionsBg}
         showSkaiPartner
       />
 
