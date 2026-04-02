@@ -14,6 +14,7 @@ interface HeroSectionProps {
   centered?: boolean;
   dark?: boolean;
   showSkaiPartner?: boolean;
+  backgroundImage?: string;
   children?: React.ReactNode;
 }
 
@@ -25,10 +26,21 @@ const HeroSection = ({
   centered = true,
   dark = false,
   showSkaiPartner = false,
+  backgroundImage,
   children,
 }: HeroSectionProps) => {
   return (
     <section className={`relative pt-28 pb-14 md:pt-36 md:pb-20 overflow-hidden ${dark ? "section-dark" : "bg-primary"}`}>
+      {/* Background image with dark overlay */}
+      {backgroundImage && (
+        <>
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+          <div className="absolute inset-0 bg-primary/85" />
+        </>
+      )}
       {/* Background layers */}
       <FloatingElements variant="hero" />
       <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />

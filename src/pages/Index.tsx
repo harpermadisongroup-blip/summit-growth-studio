@@ -12,6 +12,7 @@ import MetricCounter from "@/components/ui/MetricCounter";
 import PageLayout from "@/components/layout/PageLayout";
 import { motion } from "framer-motion";
 import { TrendingUp, Target, BarChart3, Users, Zap, Shield, LineChart, Eye } from "lucide-react";
+import heroTeamBg from "@/assets/hero-team-bg.jpg";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 24 },
@@ -30,6 +31,7 @@ const Index = () => {
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
         secondaryCta={{ label: "Book a Demo", href: "/contact" }}
         showSkaiPartner
+        backgroundImage={heroTeamBg}
       >
         
       </HeroSection>
