@@ -338,12 +338,16 @@ const Pricing = () => {
 
                 <div className="mb-8">
                   <motion.span
-                    key={estimate.monthly}
+                    key={`${estimate.monthlyLow}-${estimate.monthlyHigh}-${estimate.monthly}`}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-5xl font-bold text-foreground block"
                   >
-                    ${estimate.monthly.toLocaleString()}
+                    {estimate.monthly !== null
+                      ? `$${estimate.monthly.toLocaleString()}`
+                      : estimate.monthlyHigh !== null
+                        ? `$${estimate.monthlyLow!.toLocaleString()} – $${estimate.monthlyHigh.toLocaleString()}`
+                        : `$${estimate.monthlyLow!.toLocaleString()}+`}
                   </motion.span>
                   <span className="text-muted-foreground text-body-sm">/month</span>
                 </div>
