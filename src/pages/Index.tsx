@@ -11,7 +11,7 @@ import FloatingElements from "@/components/ui/FloatingElements";
 import MetricCounter from "@/components/ui/MetricCounter";
 import PageLayout from "@/components/layout/PageLayout";
 import { motion } from "framer-motion";
-import { TrendingUp, Target, BarChart3, Users, Zap, Shield, LineChart, Eye } from "lucide-react";
+import { TrendingUp, Target, BarChart3, Users, Zap, Shield, LineChart, Eye, Gem, ArrowLeftRight, HeartHandshake, Award } from "lucide-react";
 import heroTeamBg from "@/assets/hero-team-bg.jpg";
 
 const fadeInUp = {
