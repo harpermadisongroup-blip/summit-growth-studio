@@ -13,16 +13,16 @@ import { Button } from "@/components/ui/button";
 const models = [
   {
     title: "Full-Service Performance Management",
-    desc: "We run your paid media across all major channels. Strategy, execution, optimization, and reporting—handled entirely by our team.",
-    features: ["Strategy", "Execution", "Optimization", "Reporting"],
+    desc: "We run your paid media across all major channels with white-glove care. Strategy, execution, optimization, and reporting—handled by senior practitioners who treat your goals like their own. No rigid contracts, no junior handoffs.",
+    features: ["Strategy & execution", "Hands-on optimization", "Senior-level team (15–20 yrs avg.)", "Flexible, no lock-in contracts"],
     href: "/solutions/full-service",
     icon: Settings,
     primary: true,
   },
   {
     title: "Supported Self-Serve Model",
-    desc: "You run campaigns. We provide the enterprise platform and expert support to help you perform at a higher level.",
-    features: ["Enterprise platform access", "Onboarding", "Strategic guidance", "Ongoing support"],
+    desc: "You run campaigns on enterprise platforms—we provide the technology, onboarding, and expert support. Scale up or down as your team evolves, with no rigid scopes.",
+    features: ["Enterprise platform access at reduced rates", "Personalized onboarding", "Strategic guidance from senior experts", "Flexible support that adapts to you"],
     href: "/solutions/self-serve",
     icon: Users,
     primary: false,

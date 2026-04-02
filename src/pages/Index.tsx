@@ -11,7 +11,7 @@ import FloatingElements from "@/components/ui/FloatingElements";
 import MetricCounter from "@/components/ui/MetricCounter";
 import PageLayout from "@/components/layout/PageLayout";
 import { motion } from "framer-motion";
-import { TrendingUp, Target, BarChart3, Users, Zap, Shield, LineChart, Eye } from "lucide-react";
+import { TrendingUp, Target, BarChart3, Users, Zap, Shield, LineChart, Eye, Gem, ArrowLeftRight, HeartHandshake, Award } from "lucide-react";
 import heroTeamBg from "@/assets/hero-team-bg.jpg";
 
 const fadeInUp = {
@@ -26,8 +26,8 @@ const Index = () => {
     <PageLayout>
       {/* Hero */}
       <HeroSection
-        headline="Enterprise ad tech, without the enterprise barriers."
-        subheadline="Powered by Skai's AI-driven commerce media platform—the same technology behind the world's largest advertisers. Combined with hands-on media management across Amazon, Walmart, Google, Meta, and other RMNs."
+        headline="Enterprise Media Expertise. Boutique-Level Care."
+        subheadline="Access premium tools, flexible partnerships, and a team that treats your business like their own. Powered by Skai's AI-driven commerce media platform—combined with hands-on media management across Amazon, Walmart, Google, Meta, and other RMNs."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
         secondaryCta={{ label: "Book a Demo", href: "/contact" }}
         showSkaiPartner
@@ -78,6 +78,7 @@ const Index = () => {
               { icon: Target, title: "Performance plateaus", desc: "You've optimized what you can with the tools you have.", num: "02" },
               { icon: BarChart3, title: "Channels multiply", desc: "Every new platform adds complexity without adding clarity.", num: "03" },
               { icon: Users, title: "Teams get stretched thin", desc: "There's never enough bandwidth to do it all well.", num: "04" },
+              { icon: HeartHandshake, title: "Agencies treat you like a number", desc: "You're passed off to junior staff and lost in a sea of accounts.", num: "05" },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
@@ -135,17 +136,20 @@ const Index = () => {
             >
               <div className="absolute inset-0 bg-grid-pattern-dark pointer-events-none" />
               <div className="relative">
-                <h3 className="text-h3 mb-6">You get</h3>
-                <ul className="space-y-4">
+                <h3 className="text-h3 mb-6">Why Allied</h3>
+                <ul className="space-y-5">
                   {[
-                    { icon: Shield, label: "Enterprise-level ad technology" },
-                    { icon: Zap, label: "Cross-channel strategy" },
-                    { icon: LineChart, label: "Hands-on optimization" },
-                    { icon: Eye, label: "Ongoing performance management" },
+                    { icon: Gem, title: "Access Without the Enterprise Overhead", desc: "Gain access to Skai and other premium platforms at reduced rates—without the typical barriers, minimums, or complexity." },
+                    { icon: ArrowLeftRight, title: "Flexible by Design", desc: "No rigid contracts. No one-size-fits-all scopes. We adapt to your business, not the other way around." },
+                    { icon: HeartHandshake, title: "White-Glove, Concierge Support", desc: "A hands-on team that proactively manages your campaigns, communicates clearly, and treats your goals like their own." },
+                    { icon: Award, title: "Senior-Level Expertise, Always", desc: "Our team averages 15–20 years of experience—so you're never handed off to junior resources." },
                   ].map((item) => (
-                    <li key={item.label} className="flex items-start gap-3">
-                      <item.icon className="w-4 h-4 mt-1 text-accent flex-shrink-0" />
-                      <span className="text-body text-secondary-foreground/80">{item.label}</span>
+                    <li key={item.title} className="flex items-start gap-3">
+                      <item.icon className="w-5 h-5 mt-0.5 text-accent flex-shrink-0" />
+                      <div>
+                        <span className="text-body font-semibold text-secondary-foreground">{item.title}</span>
+                        <p className="text-body-sm text-secondary-foreground/60 mt-0.5">{item.desc}</p>
+                      </div>
                     </li>
                   ))}
                 </ul>

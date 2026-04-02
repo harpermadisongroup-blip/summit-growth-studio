@@ -5,7 +5,7 @@ import GradientText from "@/components/ui/GradientText";
 import IconBadge from "@/components/ui/IconBadge";
 import FloatingElements from "@/components/ui/FloatingElements";
 import { motion } from "framer-motion";
-import { Target, Zap, Users, Shield } from "lucide-react";
+import { Gem, ArrowLeftRight, HeartHandshake, Award } from "lucide-react";
 import heroAboutBg from "@/assets/hero-about-bg.jpg";
 
 const fadeInUp = {
@@ -16,10 +16,10 @@ const fadeInUp = {
 };
 
 const differentiators = [
-  { icon: Shield, title: "Enterprise platforms, accessible", desc: "We give growth-stage brands the same technology that powers the world's largest advertisers." },
-  { icon: Zap, title: "Performance-first approach", desc: "Every decision is tied to measurable outcomes—not vanity metrics or activity reports." },
-  { icon: Users, title: "Senior-level execution", desc: "No junior handoffs. Your campaigns are managed by experienced practitioners." },
-  { icon: Target, title: "Cross-channel clarity", desc: "Unified strategy and reporting across Amazon, Walmart, Google, Meta, and retail media." },
+  { icon: Gem, title: "Access Without the Enterprise Overhead", desc: "Gain access to Skai and other premium platforms at reduced rates—without the typical barriers, minimums, or complexity." },
+  { icon: ArrowLeftRight, title: "Flexible by Design", desc: "No rigid contracts. No one-size-fits-all scopes. We adapt to your business, not the other way around." },
+  { icon: HeartHandshake, title: "White-Glove, Concierge Support", desc: "A hands-on team that proactively manages your campaigns, communicates clearly, and treats your goals like their own." },
+  { icon: Award, title: "Senior-Level Expertise, Always", desc: "Our team averages 15–20 years of experience—so you're never handed off to junior resources." },
 ];
 
 const About = () => {

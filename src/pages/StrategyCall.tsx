@@ -56,10 +56,11 @@ const StrategyCall = () => {
                 <h3 className="text-lg font-semibold text-foreground">What you'll get:</h3>
                 <ul className="space-y-3">
                   {[
+                    "A senior strategist with 15–20 years of hands-on experience",
                     "A review of your current advertising performance",
                     "Identification of efficiency and growth opportunities",
+                    "White-glove support and a clear recommendation on next steps",
                     "GenAI-powered marketing agent",
-                    "A clear recommendation on next steps",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-body text-muted-foreground">
                       <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
