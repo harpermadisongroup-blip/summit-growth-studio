@@ -323,7 +323,7 @@ const Pricing = () => {
                   ].map((opt) => (
                     <button
                       key={opt.key}
-                      onClick={() => setManagementLevel(opt.key)}
+                      onClick={() => handleManagementChange(opt.key)}
                       className={`p-4 rounded-lg text-left transition-all border ${
                         managementLevel === opt.key
                           ? "bg-primary text-primary-foreground border-primary"
