@@ -174,7 +174,7 @@ const Pricing = () => {
           >
             Transparent pricing, <GradientText>real results.</GradientText>
           </motion.h1>
-          <motion.p {...fadeInUp} className="mt-6 text-body-lg text-muted-foreground max-w-2xl mx-auto">
+          <motion.p {...fadeInUp} className="mt-6 text-body-lg text-primary-foreground/70 max-w-2xl mx-auto">
             Choose the engagement model that fits your growth stage. All plans include access to Skai's enterprise platform.
           </motion.p>
         </div>
