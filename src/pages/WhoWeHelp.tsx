@@ -442,6 +442,7 @@ const WhoWeHelpDetail = () => {
         headline={data.title}
         subheadline={data.subtitle}
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
+        backgroundImage={heroWhoWeHelpBg}
       />
 
       <section className="py-24 md:py-32">
