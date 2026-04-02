@@ -235,10 +235,10 @@ const Pricing = () => {
 
                 <Link to={plan.name === "Enterprise" ? "/contact" : "/strategy-call"}>
                   <Button
-                    className={`w-full h-14 text-base font-semibold ${
+                    className={`w-full h-14 text-base font-semibold transition-colors duration-200 ${
                       plan.highlight
-                        ? "bg-accent text-accent-foreground hover:bg-accent/90"
-                        : "bg-primary !text-primary-foreground hover:bg-primary/90"
+                        ? "bg-primary !text-primary-foreground group-hover:bg-accent group-hover:text-accent-foreground hover:!bg-accent/90"
+                        : "bg-primary !text-primary-foreground group-hover:bg-accent group-hover:text-accent-foreground hover:!bg-accent/90"
                     }`}
                     size="lg"
                   >
