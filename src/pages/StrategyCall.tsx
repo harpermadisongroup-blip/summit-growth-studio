@@ -82,6 +82,18 @@ const StrategyCall = () => {
                   </div>
                 ))}
               </div>
+
+              {/* Team Photo */}
+              <div className="mt-10 rounded-xl overflow-hidden">
+                <img
+                  src={strategyMeetingImg}
+                  alt="Allied Digital Strategies team in a collaborative strategy session"
+                  className="w-full h-auto object-cover rounded-xl"
+                  loading="lazy"
+                  width={1024}
+                  height={1360}
+                />
+              </div>
             </motion.div>
 
             {/* Right: Form */}
