@@ -14,6 +14,7 @@ interface HeroSectionProps {
   centered?: boolean;
   dark?: boolean;
   showSkaiPartner?: boolean;
+  backgroundImage?: string;
   children?: React.ReactNode;
 }
 
