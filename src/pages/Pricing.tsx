@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Calculator, Zap, Shield, Users } from "lucide-react";
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";

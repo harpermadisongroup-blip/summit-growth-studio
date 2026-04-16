@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import { motion } from "framer-motion";
 

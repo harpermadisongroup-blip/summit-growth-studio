@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import CTABlock from "@/components/sections/CTABlock";
 import { motion } from "framer-motion";

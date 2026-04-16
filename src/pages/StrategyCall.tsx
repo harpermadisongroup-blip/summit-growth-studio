@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import FloatingElements from "@/components/ui/FloatingElements";
 import IconBadge from "@/components/ui/IconBadge";
