@@ -135,6 +135,7 @@ export const CaseStudiesHub = () => {
 
   return (
     <PageLayout>
+      <SEO title="Case Studies" description="See how growth-stage brands achieved real results with Allied Digital Strategies—from ROAS improvements to cross-channel performance gains." />
       <HeroSection
         headline="Real results. Real brands."
         subheadline="From 42% ROAS improvement to 4x scaled spend to 60% faster onboarding—see how growth-stage brands and agencies use Allied's enterprise technology and flexible engagement models to unlock measurable performance gains."

@@ -245,6 +245,7 @@ const SolutionDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={data.title} description={data.description} />
       <HeroSection
         headline={data.title}
         subheadline={data.subtitle}

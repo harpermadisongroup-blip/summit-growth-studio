@@ -26,6 +26,7 @@ const differentiators = [
 const About = () => {
   return (
     <PageLayout>
+      <SEO title="About Us" description="Meet the team behind Allied Digital Strategies. Senior-level experts with 15–20 years of experience delivering enterprise media performance with boutique-level care." />
       <HeroSection
         headline="Enterprise performance without enterprise barriers."
         subheadline="Allied Digital Strategies was built to close the gap between the advertising technology available to the largest brands and the growing companies that need it most."

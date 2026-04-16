@@ -192,6 +192,7 @@ const stats = [
 const WhoWeHelpHub = () => {
   return (
     <PageLayout>
+      <SEO title="Who We Help" description="We partner with growth-stage brands, agencies, and enterprise teams who need enterprise-grade advertising performance with flexible, hands-on support." />
       <HeroSection
         headline="Built for teams that need enterprise performance."
         subheadline="Whether you're a startup, growth-stage brand, performance agency, or enterprise team in transition—Allied has a model built for you."

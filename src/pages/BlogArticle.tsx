@@ -63,6 +63,7 @@ const BlogArticle = () => {
 
   return (
     <PageLayout>
+      <SEO title={article.title} description={article.excerpt} />
       <section className="pt-32 pb-16 md:pt-44 md:pb-20">
         <div className="mx-auto max-w-3xl px-6">
           <motion.div

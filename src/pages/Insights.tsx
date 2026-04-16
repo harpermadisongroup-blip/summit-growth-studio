@@ -68,6 +68,7 @@ const Insights = () => {
 
   return (
     <PageLayout>
+      <SEO title="Insights & Blog" description="Expert perspectives on retail media, Amazon advertising, cross-channel strategy, and scaling ad spend efficiently." />
       <HeroSection
         headline="Thinking that drives performance."
         subheadline="Practitioner perspectives on retail media, paid search, paid social, and the enterprise technology shaping modern advertising. From the team behind $8B+ in managed ad spend."

@@ -33,6 +33,7 @@ const models = [
 const Solutions = () => {
   return (
     <PageLayout>
+      <SEO title="Solutions" description="Explore full-service and self-serve advertising solutions powered by enterprise-grade platforms. Manage Amazon, Google, Meta, Walmart, and more from one team." />
       <HeroSection
         headline="Enterprise ad tech with performance options built around your team."
         subheadline="Choose full-service management or a supported self-serve model. Either way, you get enterprise-grade technology and expert-level performance."

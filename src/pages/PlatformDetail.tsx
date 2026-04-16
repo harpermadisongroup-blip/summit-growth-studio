@@ -113,6 +113,7 @@ const PlatformDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={data.title} description={data.description} />
       <HeroSection
         headline={
           isSkai ? (

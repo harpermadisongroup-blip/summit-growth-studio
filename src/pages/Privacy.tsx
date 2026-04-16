@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 const Privacy = () => (
   <PageLayout>
+    <SEO title="Privacy Policy" description="Learn how Allied Digital Strategies collects, uses, and protects your personal information." />
     <section className="pt-32 md:pt-40 pb-20 md:pb-28">
       <div className="mx-auto max-w-site px-6">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">

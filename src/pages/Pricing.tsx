@@ -158,6 +158,7 @@ const Pricing = () => {
 
   return (
     <PageLayout>
+      <SEO title="Pricing" description="Transparent, flexible pricing for full-service and self-serve advertising management. No rigid contracts—plans that adapt to your business." />
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-primary">
         <div

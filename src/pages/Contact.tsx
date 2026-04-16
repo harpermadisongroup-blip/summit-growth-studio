@@ -15,6 +15,7 @@ import heroContactBg from "@/assets/hero-contact-bg.jpg";
 const Contact = () => {
   return (
     <PageLayout>
+      <SEO title="Contact Us" description="Get in touch with Allied Digital Strategies. Schedule a strategy call or request a demo to see how enterprise ad tech can work for your brand." />
       <HeroSection
         headline="Get in touch."
         subheadline="Whether you have a question about our services, want to explore a partnership, or just want to learn more—we'd love to hear from you."
