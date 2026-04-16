@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
 import PlatformLogoStrip from "@/components/sections/PlatformLogoStrip";
@@ -24,6 +25,7 @@ const fadeInUp = {
 const Index = () => {
   return (
     <PageLayout>
+      <SEO title="Enterprise Ad Tech, Without the Enterprise Barriers" description="Access enterprise-grade ad tech, flexible partnerships, and a senior team that treats your business like their own. Full-service media management across Amazon, Walmart, Google, Meta, and more." />
       {/* Hero */}
       <HeroSection
         headline="Enterprise ad tech, without the enterprise barriers."

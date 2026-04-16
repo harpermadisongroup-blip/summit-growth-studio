@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
@@ -191,6 +192,7 @@ const stats = [
 const WhoWeHelpHub = () => {
   return (
     <PageLayout>
+      <SEO title="Who We Help" description="We partner with growth-stage brands, agencies, and enterprise teams who need enterprise-grade advertising performance with flexible, hands-on support." />
       <HeroSection
         headline="Built for teams that need enterprise performance."
         subheadline="Whether you're a startup, growth-stage brand, performance agency, or enterprise team in transition—Allied has a model built for you."
@@ -438,6 +440,7 @@ const WhoWeHelpDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={data.title} description={data.subtitle} />
       <HeroSection
         headline={data.title}
         subheadline={data.subtitle}

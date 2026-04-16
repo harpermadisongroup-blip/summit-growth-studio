@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import FloatingElements from "@/components/ui/FloatingElements";
 import IconBadge from "@/components/ui/IconBadge";
@@ -20,6 +21,7 @@ const fadeInUp = {
 const StrategyCall = () => {
   return (
     <PageLayout>
+      <SEO title="Schedule a Strategy Call" description="Book a free strategy session with our senior media team. We'll assess your current advertising setup and identify opportunities to scale performance." />
       <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 overflow-hidden">
         <FloatingElements variant="hero" />
         <div className="absolute inset-0 bg-mesh-hero pointer-events-none" />

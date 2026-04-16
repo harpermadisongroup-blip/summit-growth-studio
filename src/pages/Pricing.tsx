@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Calculator, Zap, Shield, Users } from "lucide-react";
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import GradientText from "@/components/ui/GradientText";
 import FloatingElements from "@/components/ui/FloatingElements";
@@ -157,6 +158,7 @@ const Pricing = () => {
 
   return (
     <PageLayout>
+      <SEO title="Pricing" description="Transparent, flexible pricing for full-service and self-serve advertising management. No rigid contracts—plans that adapt to your business." />
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-primary">
         <div

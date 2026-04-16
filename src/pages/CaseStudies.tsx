@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
@@ -134,6 +135,7 @@ export const CaseStudiesHub = () => {
 
   return (
     <PageLayout>
+      <SEO title="Case Studies" description="See how growth-stage brands achieved real results with Allied Digital Strategies—from ROAS improvements to cross-channel performance gains." />
       <HeroSection
         headline="Real results. Real brands."
         subheadline="From 42% ROAS improvement to 4x scaled spend to 60% faster onboarding—see how growth-stage brands and agencies use Allied's enterprise technology and flexible engagement models to unlock measurable performance gains."
@@ -262,6 +264,7 @@ export const CaseStudyDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={`${cs.title} – Case Study`} description={cs.challenge} />
       <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 overflow-hidden">
         <FloatingElements variant="hero" />
         <div className="absolute inset-0 bg-mesh-hero pointer-events-none" />

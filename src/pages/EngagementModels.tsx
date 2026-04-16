@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABlock from "@/components/sections/CTABlock";
@@ -30,6 +31,7 @@ const features = [
 const EngagementModels = () => {
   return (
     <PageLayout>
+      <SEO title="Engagement Models" description="Choose the right partnership model: full-service performance management or supported self-serve. Flexible options built around your team." />
       <HeroSection
         headline="Two ways to access enterprise performance."
         subheadline="Whether you want a fully managed solution or prefer to run campaigns yourself with expert support—we have a model built for your team."

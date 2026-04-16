@@ -1,8 +1,10 @@
+import SEO from "@/components/SEO";
 import PageLayout from "@/components/layout/PageLayout";
 import { motion } from "framer-motion";
 
 const Terms = () => (
   <PageLayout>
+    <SEO title="Terms of Service" description="Read the terms of service for Allied Digital Strategies website and services." />
     <section className="pt-32 md:pt-40 pb-20 md:pb-28">
       <div className="mx-auto max-w-site px-6">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
