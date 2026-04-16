@@ -264,6 +264,7 @@ export const CaseStudyDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={`${cs.title} – Case Study`} description={cs.challenge} />
       <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 overflow-hidden">
         <FloatingElements variant="hero" />
         <div className="absolute inset-0 bg-mesh-hero pointer-events-none" />

@@ -440,6 +440,7 @@ const WhoWeHelpDetail = () => {
 
   return (
     <PageLayout>
+      <SEO title={data.title} description={data.subtitle} />
       <HeroSection
         headline={data.title}
         subheadline={data.subtitle}
