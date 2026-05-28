@@ -81,7 +81,8 @@ const HeroSection = ({
             )}
             {secondaryCta && (
               <Link to={secondaryCta.href}>
-                <Button size="lg" className="bg-accent !text-accent-foreground hover:bg-accent/90 text-base px-10 h-14 font-semibold">
+                <Button size="lg" className="bg-destructive !text-destructive-foreground hover:bg-destructive/90 text-base px-10 h-14 font-semibold">
+
                   {secondaryCta.label}
                 </Button>
               </Link>
