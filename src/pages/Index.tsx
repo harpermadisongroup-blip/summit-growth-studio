@@ -31,7 +31,8 @@ const Index = () => {
         headline="Enterprise ad tech, without the enterprise barriers."
         subheadline="Access premium tools, flexible partnerships, and a team that treats your business like their own. Powered by Skai's AI-driven commerce media platform—combined with hands-on media management across Amazon, Walmart, Google, Meta, and other RMNs."
         primaryCta={{ label: "Schedule a Strategy Call", href: "/strategy-call" }}
-        secondaryCta={{ label: "Book a Demo", href: "/contact" }}
+        secondaryCta={{ label: "Book Today", href: "/contact" }}
+
         showSkaiPartner
         backgroundImage={heroTeamBg}
       >
